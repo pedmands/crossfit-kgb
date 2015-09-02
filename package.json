@@ -1,0 +1,19 @@
+{
+  "name": "wisdom-pet-medicine",
+  "version": "0.0.1",
+  "description": "Learning to use Bootstrap to make non-bootstrap-looking layouts.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pedmands/wisdom-pet-medicine.git"
+  },
+  "author": "Preston Edmands",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-clean-dest": "^0.1.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-if": "^1.2.5",
+    "gulp-util": "^3.0.6",
+    "jquery": "^2.1.4",
+    "mustache": "^2.1.3"
+  }
+}
