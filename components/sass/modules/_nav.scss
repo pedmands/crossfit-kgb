@@ -1,0 +1,39 @@
+
+header .navbar-default { @include background-image(
+	linear-gradient(
+		lighten($black, 20), $black
+		));
+	height: 50px;
+	border:none;
+	border-radius: 0;
+	.nav-wrap {
+		@include container(95%);
+	}
+	.navbar-nav a {
+		color: $white;
+		text-transform: uppercase;
+		font-size: 1rem;
+		padding-bottom: 5px;
+		&:hover {
+			color: $orange;
+			border-bottom: 4px solid $orange;
+		}
+		&.active {
+			color: $orange;
+			border-bottom: 4px solid $orange;
+		}
+	}// navbar-nav a
+} //header navbar-default
+
+#site-nav {
+	width:100%;
+	display: inline-block;
+	z-index: 100;
+}
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}

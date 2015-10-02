@@ -1,0 +1,37 @@
+@include border-box-sizing;
+@include establish-baseline();
+
+$susy: (
+	columns: 12,
+	container: 60em,
+	gutters: 1/4,
+	gutter-position: inside
+);
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,700|Roboto+Slab:100,400,700);
+$bodyFont	: 'Lato';
+$headFont	: 'Roboto Slab';
+
+$thin		: 100;
+$normal	: 400;
+$bold		: 700;
+
+$base-line-height	: 20px;
+
+// Breakpoints
+$narrow	: 320px;
+$small	: 640px;
+$medium	: 980px;
+$large	: 1280px;
+
+// Color Palette
+$red		: #FD4E21;
+$orange	: #E6AE2A;
+$yellow	: #D0FD5E;
+$green	: #20F387;
+$blue		: #1D50F3;
+$pink		: #E566F3;
+$purple	: #943CF3;
+$black	: #000;
+$white	: #fff;

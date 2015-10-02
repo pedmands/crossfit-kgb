@@ -1,0 +1,273 @@
+/* Style.css */
+/*Compass Imports*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,700|Roboto+Slab:100,400,700);
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*External Libraries*/
+/*Internal Partials*/
+/* line 21, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.5/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 106, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+/* line 1, ../../../components/sass/_layout.scss */
+body {
+  background: #fff;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* line 7, ../../../components/sass/_layout.scss */
+h1, h2, h3, h4, h5, h6 {
+  font: "Roboto Slab";
+  color: #E6AE2A;
+  font-weight: 700;
+}
+
+/* line 12, ../../../components/sass/_layout.scss */
+strong {
+  font-weight: 700;
+}
+
+/*Modules*/
+/* line 2, ../../../components/sass/modules/_nav.scss */
+header .navbar-default {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMzMzMzMyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #000000));
+  background-image: -moz-linear-gradient(#333333, #000000);
+  background-image: -webkit-linear-gradient(#333333, #000000);
+  background-image: linear-gradient(#333333, #000000);
+  height: 50px;
+  border: none;
+  border-radius: 0;
+}
+/* line 9, ../../../components/sass/modules/_nav.scss */
+header .navbar-default .nav-wrap {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+header .navbar-default .nav-wrap:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 12, ../../../components/sass/modules/_nav.scss */
+header .navbar-default .navbar-nav a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding-bottom: 5px;
+}
+/* line 17, ../../../components/sass/modules/_nav.scss */
+header .navbar-default .navbar-nav a:hover {
+  color: #E6AE2A;
+  border-bottom: 4px solid #E6AE2A;
+}
+/* line 21, ../../../components/sass/modules/_nav.scss */
+header .navbar-default .navbar-nav a.active {
+  color: #E6AE2A;
+  border-bottom: 4px solid #E6AE2A;
+}
+
+/* line 28, ../../../components/sass/modules/_nav.scss */
+#site-nav {
+  width: 100%;
+  display: inline-block;
+  z-index: 100;
+}
+
+/* line 33, ../../../components/sass/modules/_nav.scss */
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+/* line 2, ../../../components/sass/modules/_carousel.scss */
+#kgb-logo {
+  float: left;
+  position: fixed;
+  width: 407px;
+  height: 50px;
+  z-index: 101;
+  transition: all .5s ease-in-out;
+  background-image: url(../images/kgblogo.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+/* line 13, ../../../components/sass/modules/_carousel.scss */
+.logo-bg {
+  display: inline-block;
+  position: fixed;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(#000000, #000000, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  opacity: .5;
+  z-index: 100;
+  transition: all 1s ease-in-out;
+}
+
+/* line 23, ../../../components/sass/modules/_carousel.scss */
+.bg-hide {
+  opacity: 0;
+  height: 0;
+}
+
+/* line 24, ../../../components/sass/modules/_carousel.scss */
+.kgb-lg {
+  transform: scale(1, 1);
+}
+
+/* line 28, ../../../components/sass/modules/_carousel.scss */
+.kgb-sm {
+  transform: scale(0.5, 0.5);
+}
+
+/* Carousel Fade */
+/* line 34, ../../../components/sass/modules/_carousel.scss */
+.carousel.fade {
+  opacity: 1;
+}
+
+/* line 38, ../../../components/sass/modules/_carousel.scss */
+.carousel.fade .item {
+  transition: opacity ease-out .7s;
+  left: 0;
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block;
+}
+
+/* line 48, ../../../components/sass/modules/_carousel.scss */
+.carousel.fade .item:first-child {
+  top: auto;
+  opacity: 0;
+  position: relative;
+}
+
+/* line 54, ../../../components/sass/modules/_carousel.scss */
+.carousel.fade .item.active {
+  opacity: 1;
+}
+
+/* line 58, ../../../components/sass/modules/_carousel.scss */
+.carousel-control {
+  opacity: 0;
+}
+
+/* line 61, ../../../components/sass/modules/_carousel.scss */
+.carousel-control.right, .carousel-control.left {
+  background-image: none;
+}
+
+/* line 64, ../../../components/sass/modules/_carousel.scss */
+#featured .item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 1, ../../../components/sass/modules/_about.scss */
+#about {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+#about:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 4, ../../../components/sass/modules/_about.scss */
+#about #info section {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 3.33333%;
+  padding-right: 3.33333%;
+}

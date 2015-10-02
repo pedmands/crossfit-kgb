@@ -1,0 +1,69 @@
+// KGB Logo Splash
+#kgb-logo {
+	float:left;
+	position: fixed;
+	width: 407px;
+	height: 50px;
+	z-index: 101;
+	transition: all .5s ease-in-out;
+	background-image: url(../images/kgblogo.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.logo-bg {
+	display: inline-block;
+	position: fixed;
+	width: 100%;
+	height: 150px;
+	background: linear-gradient(rgba($black, 1), rgba($black, 1), rgba($black, .5), rgba($black, 0));
+	opacity: .5;
+	z-index: 100;
+	transition: all 1s ease-in-out;
+}
+.bg-hide {opacity: 0; height:0;}
+.kgb-lg {
+
+	transform: scale(1,1);
+}
+.kgb-sm {
+
+	transform: scale(.5,.5);
+}
+
+/* Carousel Fade */
+.carousel.fade {
+  opacity: 1;
+}
+
+.carousel.fade .item {
+  transition: opacity ease-out .7s;
+  left: 0;
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block;
+}
+
+.carousel.fade .item:first-child {
+  top: auto;
+  opacity: 0;
+  position: relative;
+}
+
+.carousel.fade .item.active {
+  opacity: 1;
+}
+
+.carousel-control {
+	opacity: 0;
+}
+.carousel-control.right, .carousel-control.left {
+	background-image: none;
+}
+#featured .item {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%; height: 100%;
+}

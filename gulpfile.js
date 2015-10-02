@@ -27,8 +27,6 @@ if (env==='development') {
 }
 
 jsSources = [
-  'components/scripts/jqloader.js',
-  'components/scripts/preefixfree.min.js',
   'components/scripts/myscript.js'
 ];
 sassSources = ['components/sass/style.scss'];

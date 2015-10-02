@@ -1,0 +1,8 @@
+#about {
+	@include container(95%);
+	#info {
+		section{
+			@include span(1 of 3);
+		}// section
+	}// info
+}// about
