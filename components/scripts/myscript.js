@@ -69,9 +69,14 @@ $(window).scroll(function(){
     $('a[href$="#coaches"]').addClass('active');
   }
 
-    if (windowPos > $('#schedule').offset().top) {
+  if (windowPos > $('#schedule').offset().top) {
     $('nav li a').removeClass('active');
     $('a[href$="#schedule"]').addClass('active');
+  }
+
+  if (windowPos > $('#location').offset().top) {
+    $('nav li a').removeClass('active');
+    $('a[href$="#location"]').addClass('active');
   }
 
   stickyNav();
