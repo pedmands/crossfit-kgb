@@ -101,6 +101,11 @@ strong {
   font-weight: 700;
 }
 
+/* line 17, ../../../components/sass/_layout.scss */
+.scene .heading h1 {
+  padding-top: 75px;
+}
+
 /*Modules*/
 /* line 2, ../../../components/sass/modules/_nav.scss */
 header .navbar-default {
@@ -113,8 +118,9 @@ header .navbar-default {
   height: 50px;
   border: none;
   border-radius: 0;
+  z-index: 100;
 }
-/* line 9, ../../../components/sass/modules/_nav.scss */
+/* line 10, ../../../components/sass/modules/_nav.scss */
 header .navbar-default .nav-wrap {
   max-width: 95%;
   margin-left: auto;
@@ -126,32 +132,25 @@ header .navbar-default .nav-wrap:after {
   display: block;
   clear: both;
 }
-/* line 12, ../../../components/sass/modules/_nav.scss */
+/* line 13, ../../../components/sass/modules/_nav.scss */
 header .navbar-default .navbar-nav a {
   color: #fff;
   text-transform: uppercase;
   font-size: 1rem;
   padding-bottom: 5px;
 }
-/* line 17, ../../../components/sass/modules/_nav.scss */
+/* line 18, ../../../components/sass/modules/_nav.scss */
 header .navbar-default .navbar-nav a:hover {
   color: #E6AE2A;
   border-bottom: 4px solid #E6AE2A;
 }
-/* line 21, ../../../components/sass/modules/_nav.scss */
+/* line 22, ../../../components/sass/modules/_nav.scss */
 header .navbar-default .navbar-nav a.active {
   color: #E6AE2A;
   border-bottom: 4px solid #E6AE2A;
 }
 
-/* line 28, ../../../components/sass/modules/_nav.scss */
-#site-nav {
-  width: 100%;
-  display: inline-block;
-  z-index: 100;
-}
-
-/* line 33, ../../../components/sass/modules/_nav.scss */
+/* line 29, ../../../components/sass/modules/_nav.scss */
 .sticky {
   position: fixed;
   width: 100%;
@@ -178,36 +177,41 @@ header .navbar-default .navbar-nav a.active {
   display: inline-block;
   position: fixed;
   width: 100%;
-  height: 150px;
+  height: 25%;
   background: linear-gradient(#000000, #000000, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   opacity: .5;
-  z-index: 100;
+  z-index: 98;
   transition: all 1s ease-in-out;
+  text-align: right;
+}
+/* line 23, ../../../components/sass/modules/_carousel.scss */
+.logo-bg h1 {
+  font-size: 3rem;
 }
 
-/* line 23, ../../../components/sass/modules/_carousel.scss */
+/* line 27, ../../../components/sass/modules/_carousel.scss */
 .bg-hide {
   opacity: 0;
   height: 0;
 }
 
-/* line 24, ../../../components/sass/modules/_carousel.scss */
+/* line 28, ../../../components/sass/modules/_carousel.scss */
 .kgb-lg {
   transform: scale(1, 1);
 }
 
-/* line 28, ../../../components/sass/modules/_carousel.scss */
+/* line 32, ../../../components/sass/modules/_carousel.scss */
 .kgb-sm {
   transform: scale(0.5, 0.5);
 }
 
 /* Carousel Fade */
-/* line 34, ../../../components/sass/modules/_carousel.scss */
+/* line 38, ../../../components/sass/modules/_carousel.scss */
 .carousel.fade {
   opacity: 1;
 }
 
-/* line 38, ../../../components/sass/modules/_carousel.scss */
+/* line 42, ../../../components/sass/modules/_carousel.scss */
 .carousel.fade .item {
   transition: opacity ease-out .7s;
   left: 0;
@@ -218,29 +222,29 @@ header .navbar-default .navbar-nav a.active {
   display: block;
 }
 
-/* line 48, ../../../components/sass/modules/_carousel.scss */
+/* line 52, ../../../components/sass/modules/_carousel.scss */
 .carousel.fade .item:first-child {
   top: auto;
   opacity: 0;
   position: relative;
 }
 
-/* line 54, ../../../components/sass/modules/_carousel.scss */
+/* line 58, ../../../components/sass/modules/_carousel.scss */
 .carousel.fade .item.active {
   opacity: 1;
 }
 
-/* line 58, ../../../components/sass/modules/_carousel.scss */
+/* line 62, ../../../components/sass/modules/_carousel.scss */
 .carousel-control {
   opacity: 0;
 }
 
-/* line 61, ../../../components/sass/modules/_carousel.scss */
+/* line 65, ../../../components/sass/modules/_carousel.scss */
 .carousel-control.right, .carousel-control.left {
   background-image: none;
 }
 
-/* line 64, ../../../components/sass/modules/_carousel.scss */
+/* line 68, ../../../components/sass/modules/_carousel.scss */
 #featured .item {
   background-size: cover;
   background-repeat: no-repeat;

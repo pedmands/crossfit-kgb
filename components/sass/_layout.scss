@@ -12,3 +12,10 @@ body {
 strong {
 	font-weight: $bold;
 }
+.scene {
+	.heading {
+		h1{
+			padding-top: 75px;
+		}
+	}
+}

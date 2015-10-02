@@ -1,6 +1,8 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 $(document).ready(function() {
 
+    var topOffSet = 50;
+
 var fullHeight = function() {
   var wheight = $(window).height();
   $('.fullheight').css('height', wheight - 50);
@@ -23,9 +25,11 @@ var stickyNav = function() {
   if (scrollTop >= stickyNavTop) {
     $('.navbar').addClass('sticky');
     $('#kgb-logo').removeClass('kgb-lg').addClass('kgb-sm');
+    $('.main').css('margin-top', topOffSet);
   }else{
     $('.navbar').removeClass('sticky');
     $('#kgb-logo').removeClass('kgb-sm').addClass('kgb-lg');
+    $('.main').css('margin-top', 0);
   }
 }; //stickyNav
 
@@ -47,7 +51,7 @@ logoBgFader();
 
 // Nav Highlighting
 $(window).scroll(function(){
-  var topOffSet = 50;
+
   var windowPos = $(window).scrollTop() + topOffSet;
   $('nav li a').removeClass('active');
 

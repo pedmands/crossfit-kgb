@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    var topOffSet = 50;
+
 var fullHeight = function() {
   var wheight = $(window).height();
   $('.fullheight').css('height', wheight - 50);
@@ -22,9 +24,11 @@ var stickyNav = function() {
   if (scrollTop >= stickyNavTop) {
     $('.navbar').addClass('sticky');
     $('#kgb-logo').removeClass('kgb-lg').addClass('kgb-sm');
+    $('.main').css('margin-top', topOffSet);
   }else{
     $('.navbar').removeClass('sticky');
     $('#kgb-logo').removeClass('kgb-sm').addClass('kgb-lg');
+    $('.main').css('margin-top', 0);
   }
 }; //stickyNav
 
@@ -46,7 +50,7 @@ logoBgFader();
 
 // Nav Highlighting
 $(window).scroll(function(){
-  var topOffSet = 50;
+
   var windowPos = $(window).scrollTop() + topOffSet;
   $('nav li a').removeClass('active');
 

@@ -6,6 +6,7 @@ header .navbar-default { @include background-image(
 	height: 50px;
 	border:none;
 	border-radius: 0;
+	z-index: 100;
 	.nav-wrap {
 		@include container(95%);
 	}
@@ -25,11 +26,6 @@ header .navbar-default { @include background-image(
 	}// navbar-nav a
 } //header navbar-default
 
-#site-nav {
-	width:100%;
-	display: inline-block;
-	z-index: 100;
-}
 .sticky {
     position: fixed;
     width: 100%;
