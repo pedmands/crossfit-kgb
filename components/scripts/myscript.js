@@ -2,13 +2,12 @@ $(function() {
 
   "use strict";
 
-  var topoffset = 50; //variable for menu height
+  var topoffset = 45; //variable for menu height
   var slideqty = $('#featured .item').length;
   var wheight = $(window).height(); //get the height of the window
   var randSlide = Math.floor(Math.random()*slideqty);
 
   $('#featured .item').eq(randSlide).addClass('active');
-
 
   $('.fullheight').css('height', wheight); //set to window tallness  
 
@@ -64,7 +63,7 @@ $(function() {
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top-topoffset+2
-        }, 500);
+        }, 1000);
         return false;
       } //target.length
     } //click function
@@ -84,4 +83,10 @@ $(function() {
     pause: false
   });
 
+
+
 });
+
+$(document).ready(function(){
+      $('.parallax').parallax();
+    });
