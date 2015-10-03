@@ -1,7 +1,7 @@
 #about {
 	margin-bottom: 2em;
 	@include container(90%);
-	strong {
+	strong { 
 		font-family: $headFont;
 	}
 	article {
@@ -27,15 +27,16 @@
 			@include clearfix();
 			}// about-kgb
 		.about-kgb li {
+			strong {@include text-shadow(0 2px 0 $orange);
+				text-transform: uppercase;}
+			
 			border-bottom: 1px solid $orange;
 			padding-right:rhythm(.5);
 			padding-left: rhythm(1);
 			padding-bottom: rhythm(1);
 			text-align: justify;
 			margin: 5px auto;
-			strong {
-				font-size: 1.1rem;
-			}
+			
 			@include breakpoint($medium){
 				&:last-child {
 				border-bottom: none;
@@ -52,7 +53,7 @@
 		}// medium
    	@include breakpoint($medium $large) {
 			&.about-kgb {
-				@include span(1 of 2);
+				@include span(2 of 4);
 			}//about-kgb
 
 		}//small
@@ -66,7 +67,7 @@
 		
 		.quote, .byline {
 			font-style: italic;
-			font-size: 1.1rem;
+			
 		}//quote & byline
 		.byline {
 			float: right;
@@ -74,6 +75,7 @@
 		.l-quote {
 			&:before {
 				font-family: 'fontawesome';
+				color: $orange;
 				content: '\f10d';
 				margin-right: .5em;
 			}//before
@@ -84,8 +86,9 @@
 		.r-quote {
 			&:after {
 				font-family: 'fontawesome';
+				color: $orange;
 				content: '\f10e';
-				margin-left: 1em;
+				margin-left: .5em;
 				margin-top: 1em;
 			}//after
 		}//r-quote

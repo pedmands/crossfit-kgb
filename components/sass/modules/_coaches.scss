@@ -1,5 +1,118 @@
 #coaches {
+	font-size: 1.2rem;
+
+	@include container(97%);
+	@include clearfix;
+	.heading {
+	@include container(90%);
+	h1 {color:$black;}
+	}
 	img{
 		width:100%;
+		height:100%;
+	}// img
+	.coach {
+		@include breakpoint($medium){
+			&:last-child {
+			border-left: 2px solid $orange;
+		}
+		}
+		
+		h2 {
+			right:0;
+			bottom:-3px;
+			font-size: 3.5rem;
+			padding: 1rem;
+			color:$orange;
+			position: absolute;
+			@include text-shadow(1px 3px 0 darken($orange, 20%));
+		}// h2
+		p {
+			margin-top:rhythm(1);
+		}
+		.licenses {
+			h1 {
+				font-size: 1.6rem;
+			}// h1
+			@include container(90%);
+			ul {
+				margin-top:1rem;
+				margin-bottom: rhythm(1.5);
+				font-family: 'fontawesome';
+				li:before {
+					content: '\f058';
+					color: darken($green, 15%);
+					margin: .5rem 1rem;
+					display: inline-block;
+					font-size: 1.5rem;
+				}// li:before
+			}//ul
+		}// .licenses
+	}// coach
+	#lia {
+		.l-quote {
+			&:before {
+				font-family: 'fontawesome';
+				color: $orange;
+				content: '\f10d';
+				margin-right: .5em;
+			}//before
+			&:first-child {
+				&:before{font-size: 1.5rem;}
+			}//first child before
+		}// l-quote
+		.r-quote {
+			&:after {
+				font-family: 'fontawesome';
+				color: $orange;
+				content: '\f10e';
+				display: inline-block;
+				margin-left: .5em;
+				
+			}//after
+		}//r-quote
+		}// lia
+		#ben {
+			.coach-pic {
+				@include border-top-left-radius(rhythm(1));
+				@include border-bottom-left-radius(rhythm(1));
+
+				display:block;
+				position: relative;
+				width:100%;
+				height:30rem;
+				@include backImage('../images/ben.jpg');
+			}//coach-pic
+		}// #ben
+		#lia {
+			.coach-pic {
+				@include border-top-right-radius(rhythm(1));
+				@include border-bottom-right-radius(rhythm(1));
+				display:block;
+				position: relative;
+				width:100%;
+				height:30rem;
+				@include backImage('../images/lia.jpg');
+			}//coach-pic
+		}// #lia
+
+		//breakpoints
+	@include breakpoint($medium){
+		.coach {
+			@include span(1 of 2 0);
+			p {
+				@include container(90%);
+			}// p
+		} // .coach
+	}// $medium
+	@include breakpoint(0 $medium) {
+		p{
+			@include container(90%);
+		}
+		.coach {
+			.coach-pic {
+				@include border-radius(rhythm(1));
+			}
+		}
 	}
-}
+}// #coaches

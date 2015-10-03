@@ -33,3 +33,21 @@ a {
 		text-decoration: none;
 	}
 }
+@include breakpoint($medium $large) {
+	body {
+		font-size: 1.1rem;
+	line-height: 130%;
+	}
+}// $small $medium
+@include breakpoint($small $medium) {
+	body {
+		font-size: 1.3rem;
+	line-height: 130%;
+	}
+}// $small $medium
+@include breakpoint(0 $small) {
+	body {
+		font-size: 1.5rem;
+	line-height: 140%;
+	}
+} // 0 $small
