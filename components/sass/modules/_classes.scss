@@ -70,7 +70,7 @@
 				linear-gradient(
 					darken($blue, 5%), darken($blue, 20%)
 				));
-				border-bottom: 6px solid darken($blue, 65%);
+				border-bottom: 6spx solid darken($blue, 65%);
 			@include border-radius(rhythm(1));
 				width: 75%;
 				margin: rhythm(1) auto;

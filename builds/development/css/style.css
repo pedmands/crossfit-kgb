@@ -149,6 +149,59 @@ a:hover {
     line-height: 140%;
   }
 }
+/* line 55, ../../../components/sass/_layout.scss */
+footer {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMzMzMzMyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #000000));
+  background-image: -moz-linear-gradient(#333333, #000000);
+  background-image: -webkit-linear-gradient(#333333, #000000);
+  background-image: linear-gradient(#333333, #000000);
+  padding: 1.25em 0;
+}
+/* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+footer:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 62, ../../../components/sass/_layout.scss */
+footer #socialmedia {
+  text-align: center;
+}
+/* line 64, ../../../components/sass/_layout.scss */
+footer #socialmedia ul {
+  list-style: none;
+}
+/* line 66, ../../../components/sass/_layout.scss */
+footer #socialmedia ul li {
+  display: inline-block;
+  padding: 0 0.625em;
+}
+/* line 67, ../../../components/sass/_layout.scss */
+footer #socialmedia ul li h1 {
+  color: #fff;
+  font-weight: 400;
+  font-family: "Lato";
+  font-size: 1.2rem;
+}
+@media (min-width: 768px) {
+  /* line 67, ../../../components/sass/_layout.scss */
+  footer #socialmedia ul li h1 {
+    font-size: 1.7rem;
+  }
+}
+/* line 78, ../../../components/sass/_layout.scss */
+footer #socialmedia ul li img {
+  width: 40px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
 /*Modules*/
 /* line 2, ../../../components/sass/modules/_nav.scss */
 .navbar {
@@ -157,12 +210,12 @@ a:hover {
 
 /* line 6, ../../../components/sass/modules/_nav.scss */
 header .navbar-default {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMzMzMzMyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzMzMzMzMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #000000));
-  background-image: -moz-linear-gradient(#333333, #000000);
-  background-image: -webkit-linear-gradient(#333333, #000000);
-  background-image: linear-gradient(#333333, #000000);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #000000), color-stop(100%, #333333));
+  background-image: -moz-linear-gradient(#000000, #333333);
+  background-image: -webkit-linear-gradient(#000000, #333333);
+  background-image: linear-gradient(#000000, #333333);
   height: 50px;
   border: none;
   border-radius: 0;
@@ -184,13 +237,13 @@ header .navbar-default .nav-wrap:after {
 header .navbar-default .navbar-nav a, header .navbar-default .navbar-nav a:focus {
   color: #fff;
   font-family: "Roboto Slab";
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 10px;
 }
-@media (max-width: 768px) {
+@media (min-width: 1200px) {
   /* line 17, ../../../components/sass/modules/_nav.scss */
   header .navbar-default .navbar-nav a, header .navbar-default .navbar-nav a:focus {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 }
 /* line 26, ../../../components/sass/modules/_nav.scss */
@@ -568,6 +621,19 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
   }
 }
 
+/* line 1, ../../../components/sass/modules/_parallax.scss */
+.parallax-window {
+  min-height: 300px;
+  width: 100%;
+  background: transparent;
+}
+@media (min-width: 768px) {
+  /* line 1, ../../../components/sass/modules/_parallax.scss */
+  .parallax-window {
+    min-height: 600px;
+  }
+}
+
 /* line 1, ../../../components/sass/modules/_classes.scss */
 #classes {
   color: #fff;
@@ -671,7 +737,7 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
   background-image: -moz-linear-gradient(#0c41ea, #092da1);
   background-image: -webkit-linear-gradient(#0c41ea, #092da1);
   background-image: linear-gradient(#0c41ea, #092da1);
-  border-bottom: 6px solid black;
+  border-bottom: 6spx solid black;
   -moz-border-radius: 1.25em;
   -webkit-border-radius: 1.25em;
   border-radius: 1.25em;
@@ -833,19 +899,6 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
   /* line 206, ../../../components/sass/modules/_classes.scss */
   #classes .content #group-class #group-button {
     margin-bottom: 2.5em;
-  }
-}
-
-/* line 1, ../../../components/sass/modules/_parallax.scss */
-.parallax-window {
-  min-height: 300px;
-  width: 100%;
-  background: transparent;
-}
-@media (min-width: 768px) {
-  /* line 1, ../../../components/sass/modules/_parallax.scss */
-  .parallax-window {
-    min-height: 600px;
   }
 }
 
@@ -1042,4 +1095,359 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
     -webkit-border-radius: 1.25em;
     border-radius: 1.25em;
   }
+}
+
+/* line 1, ../../../components/sass/modules/_schedule.scss */
+#schedule {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2E2YTZhNiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2YyZjJmMiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a6a6a6), color-stop(100%, #f2f2f2));
+  background-image: -moz-linear-gradient(#a6a6a6, #f2f2f2);
+  background-image: -webkit-linear-gradient(#a6a6a6, #f2f2f2);
+  background-image: linear-gradient(#a6a6a6, #f2f2f2);
+  padding-top: 0;
+}
+/* line 22, ../../../components/sass/_mixins.scss */
+#schedule:before, #schedule:after {
+  content: '';
+  display: table;
+}
+/* line 27, ../../../components/sass/_mixins.scss */
+#schedule:after {
+  clear: both;
+}
+/* line 8, ../../../components/sass/modules/_schedule.scss */
+#schedule .heading {
+  -moz-box-shadow: 1px 3px 0 #fff;
+  -webkit-box-shadow: 1px 3px 0 #fff;
+  box-shadow: 1px 3px 0 #fff;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2M5ZmQ0NSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2JhZmMxMiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c9fd45), color-stop(100%, #bafc12));
+  background-image: -moz-linear-gradient(#c9fd45, #bafc12);
+  background-image: -webkit-linear-gradient(#c9fd45, #bafc12);
+  background-image: linear-gradient(#c9fd45, #bafc12);
+  padding: 1.25em;
+  padding-left: 3.75em;
+  padding-bottom: 0.625em;
+}
+/* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+#schedule .heading:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 18, ../../../components/sass/modules/_schedule.scss */
+#schedule .heading h1 {
+  padding-top: 50px;
+  text-shadow: 1px 3px 0 #fff;
+  color: #000;
+}
+@media (min-width: 768px) {
+  /* line 25, ../../../components/sass/modules/_schedule.scss */
+  #schedule .content div {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 20%;
+    float: left;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 25, ../../../components/sass/modules/_schedule.scss */
+  #schedule .content div {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 20%;
+    float: left;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+}
+/* line 30, ../../../components/sass/modules/_schedule.scss */
+#schedule .content div h1 {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2M5ZmQ0NSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2JhZmMxMiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c9fd45), color-stop(100%, #bafc12));
+  background-image: -moz-linear-gradient(#c9fd45, #bafc12);
+  background-image: -webkit-linear-gradient(#c9fd45, #bafc12);
+  background-image: linear-gradient(#c9fd45, #bafc12);
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-top: 0.625em;
+  padding: .5em;
+}
+/* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+#schedule .content div h1:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 768px) {
+  /* line 30, ../../../components/sass/modules/_schedule.scss */
+  #schedule .content div h1 {
+    -moz-box-shadow: 1px 3px 0 #fff;
+    -webkit-box-shadow: 1px 3px 0 #fff;
+    box-shadow: 1px 3px 0 #fff;
+  }
+}
+@media (min-width: 0) and (max-width: 768px) {
+  /* line 30, ../../../components/sass/modules/_schedule.scss */
+  #schedule .content div h1 {
+    margin-top: 0;
+    border-top: 2px solid #000;
+  }
+}
+/* line 50, ../../../components/sass/modules/_schedule.scss */
+#schedule .content div p {
+  -moz-border-radius: 0.3125em;
+  -webkit-border-radius: 0.3125em;
+  border-radius: 0.3125em;
+  background-color: #0a34ba;
+  color: #fff;
+  text-align: center;
+  padding: 0.625em;
+  margin: .5rem;
+}
+@media (min-width: 0) and (max-width: 768px) {
+  /* line 50, ../../../components/sass/modules/_schedule.scss */
+  #schedule .content div p {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+  #schedule .content div p:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+/* line 60, ../../../components/sass/modules/_schedule.scss */
+#schedule .content div p.foundations-sched {
+  background-color: #09a455;
+}
+/* line 63, ../../../components/sass/modules/_schedule.scss */
+#schedule .content div p.ais-sched {
+  background-color: #b62702;
+}
+/* line 66, ../../../components/sass/modules/_schedule.scss */
+#schedule .content div p.open-gym {
+  background-color: gray;
+  color: #bafc12;
+}
+
+/* line 1, ../../../components/sass/modules/_location.scss */
+#location {
+  padding-bottom: 2.5em;
+}
+/* line 22, ../../../components/sass/_mixins.scss */
+#location:before, #location:after {
+  content: '';
+  display: table;
+}
+/* line 27, ../../../components/sass/_mixins.scss */
+#location:after {
+  clear: both;
+}
+/* line 5, ../../../components/sass/modules/_location.scss */
+#location .heading {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+#location .heading:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 7, ../../../components/sass/modules/_location.scss */
+#location .heading h1 {
+  text-shadow: 0px 2px #af8115;
+}
+/* line 14, ../../../components/sass/modules/_location.scss */
+#location .content section h1 {
+  font-size: 1.5rem;
+  padding-bottom: 0.625em;
+  color: #FD4E21;
+}
+/* line 19, ../../../components/sass/modules/_location.scss */
+#location .content section h1:before {
+  font-family: 'fontawesome';
+  content: '\f279';
+  font-weight: 400;
+  color: #FD4E21;
+  margin-right: 0.625em;
+}
+@media (min-width: 0) and (max-width: 768px) {
+  /* line 28, ../../../components/sass/modules/_location.scss */
+  #location .content iframe {
+    width: 100%;
+    height: 18.75em;
+    -moz-border-radius: 2.5em;
+    -webkit-border-radius: 2.5em;
+    border-radius: 2.5em;
+  }
+  /* line 33, ../../../components/sass/modules/_location.scss */
+  #location .content .text {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 1.25%;
+    padding-right: 1.25%;
+    margin-top: 1.25em;
+    line-height: 100%;
+  }
+  /* line 37, ../../../components/sass/modules/_location.scss */
+  #location .content .text ul li {
+    font-size: 1.5rem;
+  }
+  /* line 41, ../../../components/sass/modules/_location.scss */
+  #location .content #directions {
+    padding: 0.6375em;
+    margin-bottom: 2.5em;
+    font-size: 1rem;
+    line-height: 140%;
+  }
+  /* line 46, ../../../components/sass/modules/_location.scss */
+  #location .content #directions h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  /* line 50, ../../../components/sass/modules/_location.scss */
+  #location .content .text {
+    line-height: 170%;
+  }
+  /* line 51, ../../../components/sass/modules/_location.scss */
+  #location .content .text p {
+    font-size: 1.5rem;
+  }
+  /* line 54, ../../../components/sass/modules/_location.scss */
+  #location .content .map {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+  /* line 56, ../../../components/sass/modules/_location.scss */
+  #location .content .map iframe {
+    width: 100%;
+    height: 37.5em;
+  }
+  /* line 61, ../../../components/sass/modules/_location.scss */
+  #location .content #contact-info {
+    margin-right: 2.5em;
+  }
+  /* line 64, ../../../components/sass/modules/_location.scss */
+  #location .content #directions {
+    font-size: 1.5rem;
+    line-height: 140%;
+  }
+  /* line 67, ../../../components/sass/modules/_location.scss */
+  #location .content #directions h1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 11, ../../../components/sass/modules/_location.scss */
+  #location .content {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+  #location .content:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 72, ../../../components/sass/modules/_location.scss */
+  #location .content iframe {
+    width: 100%;
+    height: 25em;
+    -moz-border-radius: 2.5em;
+    -webkit-border-radius: 2.5em;
+    border-radius: 2.5em;
+  }
+  /* line 77, ../../../components/sass/modules/_location.scss */
+  #location .content .text {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 1.25em;
+  }
+  /* line 80, ../../../components/sass/modules/_location.scss */
+  #location .content .text p {
+    font-size: 1.5rem;
+  }
+  /* line 81, ../../../components/sass/modules/_location.scss */
+  #location .content .text ul {
+    margin-top: 10em;
+  }
+  /* line 83, ../../../components/sass/modules/_location.scss */
+  #location .content .text ul li {
+    font-size: 2.5rem;
+  }
+  /* line 88, ../../../components/sass/modules/_location.scss */
+  #location .content #directions {
+    font-size: 1.5rem;
+    line-height: 140%;
+  }
+  /* line 91, ../../../components/sass/modules/_location.scss */
+  #location .content #directions h1 {
+    font-size: 2rem;
+  }
+}
+/* line 94, ../../../components/sass/modules/_location.scss */
+#location .content #directions {
+  -moz-border-radius: 0.625em;
+  -webkit-border-radius: 0.625em;
+  border-radius: 0.625em;
+  border: 3px solid #FD4E21;
+  padding: 1.25em;
+  margin-bottom: 2.5em;
+}
+/* line 101, ../../../components/sass/modules/_location.scss */
+#location .content .text {
+  font-size: 1rem;
+}
+/* line 104, ../../../components/sass/modules/_location.scss */
+#location .content .text ul {
+  margin-top: 2.5em;
+  bottom: 0;
+  font-size: 2rem;
+  line-height: 150%;
+  text-align: right;
+}
+/* line 110, ../../../components/sass/modules/_location.scss */
+#location .content .text ul li a {
+  color: #dda31a;
+  font-family: "Roboto Slab";
+  text-decoration: underline;
+}
+/* line 114, ../../../components/sass/modules/_location.scss */
+#location .content .text ul li a:hover {
+  color: #ebbf58;
 }
