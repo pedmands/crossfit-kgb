@@ -28,7 +28,6 @@
 			iframe {
 				width: 100%;
 				height: rhythm(15);
-				@include border-radius(rhythm(2));
 			}// .googlemap
 			.text {
 				@include span(4 of 8);
@@ -47,6 +46,9 @@
 			}// #directions
 		}// 0 $medium
 		@include breakpoint($medium $large) {
+			iframe {
+				@include border-radius(rhythm(1));
+			}
 			.text {
 				p{font-size: 1.5rem;}
 				line-height: 170%;

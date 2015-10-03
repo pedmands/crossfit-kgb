@@ -1,9 +1,7 @@
 #schedule {
-	@include background-image(
-		linear-gradient(
-			darken($white, 35%), darken($white, 5%)
-		));
+	@include stripedBg(darken($white,20%), darken($white,10%));
 	padding-top: 0;
+	padding-bottom: rhythm(2);
 	@include clearfix();
 	.heading {
 		@include box-shadow(1px 3px 0 $white);

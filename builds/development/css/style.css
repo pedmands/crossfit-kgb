@@ -484,10 +484,13 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
 }
 /* line 17, ../../../components/sass/modules/_about.scss */
 #about article #community img {
+  -moz-border-radius: 0.625em;
+  -webkit-border-radius: 0.625em;
+  border-radius: 0.625em;
   width: 100%;
   margin-bottom: 1em;
 }
-/* line 22, ../../../components/sass/modules/_about.scss */
+/* line 23, ../../../components/sass/modules/_about.scss */
 #about article #components {
   padding-bottom: 1em;
 }
@@ -509,7 +512,7 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
 #about article .about-kgb:after {
   clear: both;
 }
-/* line 29, ../../../components/sass/modules/_about.scss */
+/* line 30, ../../../components/sass/modules/_about.scss */
 #about article .about-kgb li {
   border-bottom: 1px solid #E6AE2A;
   padding-right: 0.625em;
@@ -518,19 +521,19 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
   text-align: justify;
   margin: 5px auto;
 }
-/* line 30, ../../../components/sass/modules/_about.scss */
+/* line 31, ../../../components/sass/modules/_about.scss */
 #about article .about-kgb li strong {
   text-shadow: 0 2px 0 #E6AE2A;
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  /* line 41, ../../../components/sass/modules/_about.scss */
+  /* line 42, ../../../components/sass/modules/_about.scss */
   #about article .about-kgb li:last-child {
     border-bottom: none;
   }
 }
 @media (min-width: 1200px) {
-  /* line 50, ../../../components/sass/modules/_about.scss */
+  /* line 51, ../../../components/sass/modules/_about.scss */
   #about #info section {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -542,7 +545,7 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
-  /* line 55, ../../../components/sass/modules/_about.scss */
+  /* line 56, ../../../components/sass/modules/_about.scss */
   #about #info section.about-kgb {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -554,7 +557,7 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
-  /* line 63, ../../../components/sass/modules/_about.scss */
+  /* line 64, ../../../components/sass/modules/_about.scss */
   #about #about-crossfit {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -565,26 +568,26 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
     padding-right: 5%;
   }
 }
-/* line 68, ../../../components/sass/modules/_about.scss */
+/* line 69, ../../../components/sass/modules/_about.scss */
 #about #about-crossfit .quote, #about #about-crossfit .byline {
   font-style: italic;
 }
-/* line 72, ../../../components/sass/modules/_about.scss */
+/* line 73, ../../../components/sass/modules/_about.scss */
 #about #about-crossfit .byline {
   float: right;
 }
-/* line 76, ../../../components/sass/modules/_about.scss */
+/* line 77, ../../../components/sass/modules/_about.scss */
 #about #about-crossfit .l-quote:before {
   font-family: 'fontawesome';
   color: #E6AE2A;
   content: '\f10d';
   margin-right: .5em;
 }
-/* line 83, ../../../components/sass/modules/_about.scss */
+/* line 84, ../../../components/sass/modules/_about.scss */
 #about #about-crossfit .l-quote:first-child:before {
   font-size: 1.5rem;
 }
-/* line 87, ../../../components/sass/modules/_about.scss */
+/* line 88, ../../../components/sass/modules/_about.scss */
 #about #about-crossfit .r-quote:after {
   font-family: 'fontawesome';
   color: #E6AE2A;
@@ -621,15 +624,15 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
   }
 }
 
-/* line 1, ../../../components/sass/modules/_parallax.scss */
-.parallax-window {
+/* line 3, ../../../components/sass/modules/_parallax.scss */
+body > div > div.parallax-window {
   min-height: 300px;
   width: 100%;
   background: transparent;
 }
 @media (min-width: 768px) {
-  /* line 1, ../../../components/sass/modules/_parallax.scss */
-  .parallax-window {
+  /* line 3, ../../../components/sass/modules/_parallax.scss */
+  body > div > div.parallax-window {
     min-height: 600px;
   }
 }
@@ -1099,13 +1102,10 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
 
 /* line 1, ../../../components/sass/modules/_schedule.scss */
 #schedule {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2E2YTZhNiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2YyZjJmMiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a6a6a6), color-stop(100%, #f2f2f2));
-  background-image: -moz-linear-gradient(#a6a6a6, #f2f2f2);
-  background-image: -webkit-linear-gradient(#a6a6a6, #f2f2f2);
-  background-image: linear-gradient(#a6a6a6, #f2f2f2);
+  background: linear-gradient(45deg, #cccccc 25%, #e6e6e6 0%, #e6e6e6 50%, #cccccc 0%, #cccccc 75%, #e6e6e6 0%);
+  background-size: 100px 100px;
   padding-top: 0;
+  padding-bottom: 2.5em;
 }
 /* line 22, ../../../components/sass/_mixins.scss */
 #schedule:before, #schedule:after {
@@ -1116,7 +1116,7 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
 #schedule:after {
   clear: both;
 }
-/* line 8, ../../../components/sass/modules/_schedule.scss */
+/* line 6, ../../../components/sass/modules/_schedule.scss */
 #schedule .heading {
   -moz-box-shadow: 1px 3px 0 #fff;
   -webkit-box-shadow: 1px 3px 0 #fff;
@@ -1140,14 +1140,14 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
   display: block;
   clear: both;
 }
-/* line 18, ../../../components/sass/modules/_schedule.scss */
+/* line 16, ../../../components/sass/modules/_schedule.scss */
 #schedule .heading h1 {
   padding-top: 50px;
   text-shadow: 1px 3px 0 #fff;
   color: #000;
 }
 @media (min-width: 768px) {
-  /* line 25, ../../../components/sass/modules/_schedule.scss */
+  /* line 23, ../../../components/sass/modules/_schedule.scss */
   #schedule .content div {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1159,7 +1159,7 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
   }
 }
 @media (min-width: 1200px) {
-  /* line 25, ../../../components/sass/modules/_schedule.scss */
+  /* line 23, ../../../components/sass/modules/_schedule.scss */
   #schedule .content div {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1170,7 +1170,7 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
     padding-right: 1%;
   }
 }
-/* line 30, ../../../components/sass/modules/_schedule.scss */
+/* line 28, ../../../components/sass/modules/_schedule.scss */
 #schedule .content div h1 {
   max-width: 100%;
   margin-left: auto;
@@ -1195,7 +1195,7 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
   clear: both;
 }
 @media (min-width: 768px) {
-  /* line 30, ../../../components/sass/modules/_schedule.scss */
+  /* line 28, ../../../components/sass/modules/_schedule.scss */
   #schedule .content div h1 {
     -moz-box-shadow: 1px 3px 0 #fff;
     -webkit-box-shadow: 1px 3px 0 #fff;
@@ -1203,13 +1203,13 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
   }
 }
 @media (min-width: 0) and (max-width: 768px) {
-  /* line 30, ../../../components/sass/modules/_schedule.scss */
+  /* line 28, ../../../components/sass/modules/_schedule.scss */
   #schedule .content div h1 {
     margin-top: 0;
     border-top: 2px solid #000;
   }
 }
-/* line 50, ../../../components/sass/modules/_schedule.scss */
+/* line 48, ../../../components/sass/modules/_schedule.scss */
 #schedule .content div p {
   -moz-border-radius: 0.3125em;
   -webkit-border-radius: 0.3125em;
@@ -1221,7 +1221,7 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
   margin: .5rem;
 }
 @media (min-width: 0) and (max-width: 768px) {
-  /* line 50, ../../../components/sass/modules/_schedule.scss */
+  /* line 48, ../../../components/sass/modules/_schedule.scss */
   #schedule .content div p {
     max-width: 90%;
     margin-left: auto;
@@ -1234,15 +1234,15 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
     clear: both;
   }
 }
-/* line 60, ../../../components/sass/modules/_schedule.scss */
+/* line 58, ../../../components/sass/modules/_schedule.scss */
 #schedule .content div p.foundations-sched {
   background-color: #09a455;
 }
-/* line 63, ../../../components/sass/modules/_schedule.scss */
+/* line 61, ../../../components/sass/modules/_schedule.scss */
 #schedule .content div p.ais-sched {
   background-color: #b62702;
 }
-/* line 66, ../../../components/sass/modules/_schedule.scss */
+/* line 64, ../../../components/sass/modules/_schedule.scss */
 #schedule .content div p.open-gym {
   background-color: gray;
   color: #bafc12;
@@ -1296,11 +1296,8 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
   #location .content iframe {
     width: 100%;
     height: 18.75em;
-    -moz-border-radius: 2.5em;
-    -webkit-border-radius: 2.5em;
-    border-radius: 2.5em;
   }
-  /* line 33, ../../../components/sass/modules/_location.scss */
+  /* line 32, ../../../components/sass/modules/_location.scss */
   #location .content .text {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1312,32 +1309,38 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
     margin-top: 1.25em;
     line-height: 100%;
   }
-  /* line 37, ../../../components/sass/modules/_location.scss */
+  /* line 36, ../../../components/sass/modules/_location.scss */
   #location .content .text ul li {
     font-size: 1.5rem;
   }
-  /* line 41, ../../../components/sass/modules/_location.scss */
+  /* line 40, ../../../components/sass/modules/_location.scss */
   #location .content #directions {
     padding: 0.6375em;
     margin-bottom: 2.5em;
     font-size: 1rem;
     line-height: 140%;
   }
-  /* line 46, ../../../components/sass/modules/_location.scss */
+  /* line 45, ../../../components/sass/modules/_location.scss */
   #location .content #directions h1 {
     font-size: 1.5rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
-  /* line 50, ../../../components/sass/modules/_location.scss */
+  /* line 49, ../../../components/sass/modules/_location.scss */
+  #location .content iframe {
+    -moz-border-radius: 1.25em;
+    -webkit-border-radius: 1.25em;
+    border-radius: 1.25em;
+  }
+  /* line 52, ../../../components/sass/modules/_location.scss */
   #location .content .text {
     line-height: 170%;
   }
-  /* line 51, ../../../components/sass/modules/_location.scss */
+  /* line 53, ../../../components/sass/modules/_location.scss */
   #location .content .text p {
     font-size: 1.5rem;
   }
-  /* line 54, ../../../components/sass/modules/_location.scss */
+  /* line 56, ../../../components/sass/modules/_location.scss */
   #location .content .map {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1347,21 +1350,21 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
     padding-left: 2.5%;
     padding-right: 2.5%;
   }
-  /* line 56, ../../../components/sass/modules/_location.scss */
+  /* line 58, ../../../components/sass/modules/_location.scss */
   #location .content .map iframe {
     width: 100%;
     height: 37.5em;
   }
-  /* line 61, ../../../components/sass/modules/_location.scss */
+  /* line 63, ../../../components/sass/modules/_location.scss */
   #location .content #contact-info {
     margin-right: 2.5em;
   }
-  /* line 64, ../../../components/sass/modules/_location.scss */
+  /* line 66, ../../../components/sass/modules/_location.scss */
   #location .content #directions {
     font-size: 1.5rem;
     line-height: 140%;
   }
-  /* line 67, ../../../components/sass/modules/_location.scss */
+  /* line 69, ../../../components/sass/modules/_location.scss */
   #location .content #directions h1 {
     font-size: 2rem;
   }
@@ -1379,7 +1382,7 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
     display: block;
     clear: both;
   }
-  /* line 72, ../../../components/sass/modules/_location.scss */
+  /* line 74, ../../../components/sass/modules/_location.scss */
   #location .content iframe {
     width: 100%;
     height: 25em;
@@ -1387,7 +1390,7 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
     -webkit-border-radius: 2.5em;
     border-radius: 2.5em;
   }
-  /* line 77, ../../../components/sass/modules/_location.scss */
+  /* line 79, ../../../components/sass/modules/_location.scss */
   #location .content .text {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1398,29 +1401,29 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
     padding-right: 5%;
     margin-top: 1.25em;
   }
-  /* line 80, ../../../components/sass/modules/_location.scss */
+  /* line 82, ../../../components/sass/modules/_location.scss */
   #location .content .text p {
     font-size: 1.5rem;
   }
-  /* line 81, ../../../components/sass/modules/_location.scss */
+  /* line 83, ../../../components/sass/modules/_location.scss */
   #location .content .text ul {
     margin-top: 10em;
   }
-  /* line 83, ../../../components/sass/modules/_location.scss */
+  /* line 85, ../../../components/sass/modules/_location.scss */
   #location .content .text ul li {
     font-size: 2.5rem;
   }
-  /* line 88, ../../../components/sass/modules/_location.scss */
+  /* line 90, ../../../components/sass/modules/_location.scss */
   #location .content #directions {
     font-size: 1.5rem;
     line-height: 140%;
   }
-  /* line 91, ../../../components/sass/modules/_location.scss */
+  /* line 93, ../../../components/sass/modules/_location.scss */
   #location .content #directions h1 {
     font-size: 2rem;
   }
 }
-/* line 94, ../../../components/sass/modules/_location.scss */
+/* line 96, ../../../components/sass/modules/_location.scss */
 #location .content #directions {
   -moz-border-radius: 0.625em;
   -webkit-border-radius: 0.625em;
@@ -1429,11 +1432,11 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
   padding: 1.25em;
   margin-bottom: 2.5em;
 }
-/* line 101, ../../../components/sass/modules/_location.scss */
+/* line 103, ../../../components/sass/modules/_location.scss */
 #location .content .text {
   font-size: 1rem;
 }
-/* line 104, ../../../components/sass/modules/_location.scss */
+/* line 106, ../../../components/sass/modules/_location.scss */
 #location .content .text ul {
   margin-top: 2.5em;
   bottom: 0;
@@ -1441,13 +1444,13 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
   line-height: 150%;
   text-align: right;
 }
-/* line 110, ../../../components/sass/modules/_location.scss */
+/* line 112, ../../../components/sass/modules/_location.scss */
 #location .content .text ul li a {
   color: #dda31a;
   font-family: "Roboto Slab";
   text-decoration: underline;
 }
-/* line 114, ../../../components/sass/modules/_location.scss */
+/* line 116, ../../../components/sass/modules/_location.scss */
 #location .content .text ul li a:hover {
   color: #ebbf58;
 }
