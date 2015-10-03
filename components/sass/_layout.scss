@@ -3,19 +3,33 @@ body {
 	font-family: $bodyFont;
 	font-weight: $normal;
 	font-size: 16px;
+	color: $black;
 }
 #{headings()} {
-	font: $headFont;
+	font-family: $headFont;
 	color: $orange;
 	font-weight: $bold;
 }
 strong {
 	font-weight: $bold;
 }
+p {
+	margin: 0;
+	margin-bottom: rhythm(1);
+	text-align: justify;
+}
 .scene {
+	padding-top:75px;
 	.heading {
 		h1{
-			padding-top: 75px;
+			font-size: 2rem;
+			margin-bottom: rhythm(.5);
 		}
+	}
+}
+a {
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
 	}
 }

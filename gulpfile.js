@@ -27,7 +27,7 @@ if (env==='development') {
 }
 
 jsSources = [
-  'components/scripts/myscript.js'
+  'components/scripts/*.js'
 ];
 sassSources = ['components/sass/style.scss'];
 htmlSources = [outputDir + '*.html'];

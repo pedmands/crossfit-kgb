@@ -1,22 +1,41 @@
+/*! 
+// sCrossfit KGB Javascript
+// http://www.crossfitkgb.com
+// Copyright 2015 Preston Edmands
+// MIT License
+**/
 $(document).ready(function() {
 
-    var topOffSet = 50;
 
-var fullHeight = function() {
-  var wheight = $(window).height();
-  $('.fullheight').css('height', wheight - 50);
-}; // fullHeight
+  "use strict";
 
-fullHeight();
+  var topOffSet = 50; //variable for menu height
+  var slideqty = $('#featured .item').length;
+  var wheight = $(window).height(); //get the height of the window
+  var randSlide = Math.floor(Math.random()*slideqty);
 
-$(window).resize(function(){
-  fullHeight();
-  stickyNav();
-  logoBgFader();
-});
+  $('#featured .item').eq(randSlide).addClass('active');
+
+
+  $('.fullheight').css('height', wheight - 50); //set to window tallness  
+
+
+  //replace IMG inside carousels with a background image
+  $('#featured .item img').each(function() {
+    var imgSrc = $(this).attr('src');
+    $(this).parent().css({'background-image': 'url('+imgSrc+')'});
+    $(this).remove();
+  });
+
+  //adjust height of .fullheight elements on window resize
+  $(window).resize(function() {
+    wheight = $(window).height(); //get the height of the window
+    $('.fullheight').css('height', wheight); //set to window tallness  
+  });
 
 //Sticky Nav
-var stickyNavTop = $('.navbar').offset().top;
+var stickyNavTop = $('nav').offset().top;
+
 
 var stickyNav = function() {
   var scrollTop = $(window).scrollTop();
@@ -83,21 +102,22 @@ $(window).scroll(function(){
   logoBgFader();
 });
 
-// Carousel
-  var slideqty = $('#featured .item').length;
-  var randSlide = Math.floor(Math.random()*slideqty);
-
-  $('#featured .item').eq(randSlide).addClass('active');
-
-
-  //replace IMG inside carousels with a background image
-  $('#featured .item img').each(function() {
-    var imgSrc = $(this).attr('src');
-    $(this).parent().css({'background-image': 'url('+imgSrc+')'});
-    $(this).remove();
+//Smooth Scrolling
+$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 2000);
+        return false;
+      }
+    }
   });
 
-    //Automatically generate carousel indicators
+
+ //Automatically generate carousel indicators
   for (var i=0; i < slideqty; i++) {
     var insertText = '<li data-target="#featured" data-slide-to="' + i + '"';
     if (i === randSlide) {
@@ -108,9 +128,8 @@ $(window).scroll(function(){
   }
 
   $('.carousel').carousel({
-    pause: false
+    pause: false,
+    interval: 3000
   });
-
-
 
 });

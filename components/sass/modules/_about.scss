@@ -1,8 +1,101 @@
 #about {
-	@include container(95%);
+	margin-bottom: 2em;
+	@include container(90%);
+	strong {
+		font-family: $headFont;
+	}
+	article {
+		@include clearfix();
+		ul {
+			padding-left: rhythm(1);
+			padding-right: rhythm(1);
+		}// ul
+		#community { 
+			@include clearfix();
+			ul { margin-top: 1em; 
+			} //first ul
+			img {
+				width:100%;
+				margin-bottom:1em;
+			}
+		} //#community
+		#components {
+			@include clearfix();
+			padding-bottom: 1em;
+			}// components
+		.about-kgb {
+			@include clearfix();
+			}// about-kgb
+		.about-kgb li {
+			border-bottom: 1px solid $orange;
+			padding-right:rhythm(.5);
+			padding-left: rhythm(1);
+			padding-bottom: rhythm(1);
+			text-align: justify;
+			margin: 5px auto;
+			strong {
+				font-size: 1.1rem;
+			}
+			@include breakpoint($medium){
+				&:last-child {
+				border-bottom: none;
+			}// last-child
+			}//medium
+			
+		}// about-kgb li
+	}// article
+	
 	#info {
-		section{
-			@include span(1 of 3);
-		}// section
-	}// info
+		section {
+		@include breakpoint($large) {
+			@include span(5 of 15);
+		}// medium
+   	@include breakpoint($medium $large) {
+			&.about-kgb {
+				@include span(1 of 2);
+			}//about-kgb
+
+		}//small
+		}//section
+	}// #info
+	
+	#about-crossfit {
+		@include breakpoint($medium $large) {
+			@include span(2 of 2);
+		}
+		
+		.quote, .byline {
+			font-style: italic;
+			font-size: 1.1rem;
+		}//quote & byline
+		.byline {
+			float: right;
+		}// byline
+		.l-quote {
+			&:before {
+				font-family: 'fontawesome';
+				content: '\f10d';
+				margin-right: .5em;
+			}//before
+			&:first-child {
+				&:before{font-size: 1.5rem;}
+			}//first child before
+		}// l-quote
+		.r-quote {
+			&:after {
+				font-family: 'fontawesome';
+				content: '\f10e';
+				margin-left: 1em;
+				margin-top: 1em;
+			}//after
+		}//r-quote
+	}// #about-crossfit
+
+	@include breakpoint($small $medium) {
+		@include container(85%);
+	}
+	@include breakpoint(0 $small) {
+		@include container(90%);
+	}
+
 }// about

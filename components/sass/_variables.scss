@@ -9,7 +9,7 @@ $susy: (
 );
 
 // Fonts
-@import url(https://fonts.googleapis.com/css?family=Lato:400,100,700|Roboto+Slab:100,400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,100,700|Roboto+Slab:100,400,700);
 $bodyFont	: 'Lato';
 $headFont	: 'Roboto Slab';
 
@@ -22,8 +22,8 @@ $base-line-height	: 20px;
 // Breakpoints
 $narrow	: 320px;
 $small	: 640px;
-$medium	: 980px;
-$large	: 1280px;
+$medium	: 860px;
+$large	: 1200px;
 
 // Color Palette
 $red		: #FD4E21;
