@@ -1,0 +1,31 @@
+footer {
+	@include container(100%);
+		@include background-image(
+		linear-gradient(
+			lighten($black, 20%), $black	
+		));
+	padding: rhythm(1) 0;
+	#socialmedia {
+		text-align: center;
+		ul {
+			list-style: none;
+			li {
+				h1 {
+					color: $white;
+					font-weight: $normal;
+					font-family: $bodyFont;
+					font-size: 1.2rem;
+					@include breakpoint($medium){
+						font-size: 1.7rem;
+					}
+				}
+				display: inline-block;
+				padding: 0 rhythm(.5);
+				img {
+					width: 40px;
+					@include border-radius(50%);
+				}// img
+			}//li
+		}//ul
+	}//socialmedia
+}// footer

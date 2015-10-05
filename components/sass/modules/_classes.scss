@@ -1,28 +1,40 @@
 #classes {
+	font-weight: $thin;
+	@include clearfix();
+	@include carbonFibre;
 	color: $white;
 	padding-bottom: 2em;
 	p {
 		margin: .5em 0;
-	}
-	@include clearfix();
-	background-color: darken($orange, 12%);
-	.heading {
-		p{@include border-radius(rhythm(.5));
-		background: rgba($black, .25);
-		padding: rhythm(1);
-		border-bottom: 4px solid rgba(darken($orange, 30%),.5);}
-		
-		@include container(90%);
-		
+	}// p
+	section {
+		h1 { 
+			@include border-radius(rhythm(.5));
+			margin-bottom: 10px;
+			font-size: 1.2rem;
+			font-family:$headFont;
+			padding: rhythm(.5);
+		}// h1
+	}//section
+
+	.heading { 
+		@include container(95%);
 		margin-bottom: 1em;
+		p{
+			@include border-radius(rhythm(.5));
+			background: rgba($black, .25);
+			padding: rhythm(1);
+			border-bottom: .25rem solid rgba($white,.15);
+			border-top: .25rem solid rgba($black,.25);
+		}// p
 		h1 {
 			color: $white;
-
 			}// h1
 			p {
 				color: $white;
-			}
+			}// h1 p
 	}// .heading
+
 	.content {
 		h1 {
 			margin: 1em 0;
@@ -34,55 +46,59 @@
 			font-family: 'fontawesome';
 			margin-right:10px;
 			font-weight: $normal;
-			font-size: 2rem;
 		}// h1:before
 		li:before {
 			font-family: 'fontawesome';
 			margin-right:10px;
 			margin-left: 25px;
 		}// li:before
-		li {
-			font-style: italic;
-			margin: .25em 0;
-		}
+		ul {
+			@include border-radius(rhythm(.45));
+			background: rgba($black, .25);
+			padding: .35em;
+			li {
+				font-style: italic;
+				margin: .25em 0;
+				margin-left: 0;
+			}// li
+		}// ul
+		
 		#foundations {
 			h1:before {
-				content: '\f085';
+				content: '\f085'; // gears
 			}// h1:before
 			li:before {
-				content: '\f013';
+				content: '\f013'; // gear
 				font-style:normal;
+				color: darken($green, 20%);
 			}// li:before
 			h1 {
 				background-color: darken($green, 20%);
+				border-bottom: .25rem solid darken($green, 35%);
 				}// h1
 		}// #foundations
 
 		#group-class {
 			h1:before {
-				content: '\f1b3';
+				content: '\f1b3'; // blocks
 			}// h1:before
 			h1 {
 				background-color: darken($blue, 15%);
+				border-bottom: .25rem solid darken($blue, 35%);
 			}//h1
 			
-			#group-button { @include background-image(
-				linear-gradient(
-					darken($blue, 5%), darken($blue, 20%)
-				));
-				border-bottom: 6spx solid darken($blue, 65%);
-			@include border-radius(rhythm(1));
-				width: 75%;
-				margin: rhythm(1) auto;
-				margin-top: rhythm(3);
+			#group-button { 
+				@include border-radius(rhythm(1));
+				background-color: darken($blue, 15%);
+				border-bottom: .25rem solid darken($blue, 35%);
+				margin: rhythm(2);
 				padding: rhythm(1);
 				display:block;
 				a {
-				
 				h2, h3 {
 					color: $white;
 					text-align: center;
-					font-size: 1.5rem;
+					font-size: 1.3rem;
 					font-weight: $normal;
 					font-family:$bodyFont;
 				}// h2, h3
@@ -90,13 +106,13 @@
 					margin-top:rhythm(1);
 					&:after {
 						font-family: 'fontawesome';
-						content: '\f13a';
+						content: '\f107';  // fa-angle-down
 						margin-left: rhythm(.5);
 					}//&:after
 				}// h2
 				h3 {
 					i {
-						font-size: 5rem;
+						font-size: 3rem;
 						margin-top: 1rem;
 					}// i
 					}// h3
@@ -106,78 +122,66 @@
 
 		#ais {
 			h1:before {
-				content: '\f0ad';
+				content: '\f0ad';  // wrench
 			}// h1:before
 			h1 {
 				background-color: darken($red, 20%);
-			}
+				border-bottom: .25rem solid darken($red, 35%);
+			} //h1
 			h2, h3 {
+				@include text-shadow(0 2px 0 darken($red, 30%));
 				color: darken($red, 20%);
 				text-align: center;
-				margin: 15px auto;
-			}//
-			h2 {
-				font-size: 2rem;
-			}// h2
+				font-size: 1.5rem;
+			}// h2, h3
+			.shaded-bg {
+				@include border-radius(rhythm(.45));
+				background: rgba($white, .05);
+				padding: .35em;
+				margin-top: rhythm(2);
+				border-bottom: .25rem solid rgba($black,.35);
+			}
 		}// #ais
 
 	}// content
 
-	img {
-		width: 100%;
-		max-width:400px;
-		@include border-radius(10px);
-	}// img
-
-	section {
-		h1 { @include border-radius(rhythm(.5));
-			margin-bottom: 10px;
-			font-size: 1.2em;
-			font-family:$headFont;
-			padding: rhythm(.5);
-		}
-	}//section
 
 
 	// Breakpoints
 	@include breakpoint($large) {
 		section {
 			@include span(2 of 6);
-			border-left: 1px solid rgba(darken($orange, 30%),.5);
-			border-right: 1px solid rgba(darken($orange, 30%),.5);
 			&:first-child {
 				border-left: none;
-				border-right: none;
 			}//first-child
 			&:last-child {
-				border-left: none;
 				border-right: none;
 			}//last-child
-		}
+		} //section
 		.heading {
 			p {
 				font-size: 1.3em;
 			}// p
+			h1 {
+				font-size: 2rem;
+			}// h1
 		}// heading
 		.content {
 			font-size: 1.3em;
-			h1 {
-				font-size: 2rem;
-			}
 		}// content	
 	}// $large
 
-	@include breakpoint($medium $large) {
+	@include breakpoint($medium) {
 		section { 
 			@include span(2 of 6);
-			border-left: 1px solid rgba(darken($orange, 30%),.5);
-			border-right: 1px solid rgba(darken($orange, 30%),.5);
+			border-left: 1px solid rgba($white,.5);
+			border-right: 1px solid rgba($black,.5);
 			&:first-child {
 				border-left: none;
-				border-right: none;
+		
 			}//first-child
 			&:last-child {
-				border-left: none;
+		
 				border-right: none;
 			}//last-child
 		}// section
@@ -188,16 +192,14 @@
 		}
 	}// medium
 	@include breakpoint(0 $medium) {
-		
-		
 		section {
-			@include container(85%);
+			@include container(95%);
 			border-bottom: 1px solid $black;
 		}//section
 		.content {
-			h1,h2,h3{text-align: center;}
+			
 			h1 {
-				font-size: 2.5rem;
+				font-size: 1.5rem;
 			}// h1
 			p {
 				margin-bottom: rhythm(1);

@@ -9,9 +9,9 @@ $susy: (
 );
 
 // Fonts
-@import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,100,700|Roboto+Slab:100,400,700);
-$bodyFont	: 'Lato';
-$headFont	: 'Roboto Slab';
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans100,400,700|Roboto+Slab:100,400,700);
+$bodyFont	: 'Droid Sans', sans-serif;
+$headFont	: 'Roboto Slab', serif;
 
 $thin		: 100;
 $normal	: 400;

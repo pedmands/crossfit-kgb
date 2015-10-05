@@ -1,51 +1,62 @@
 #location {
-
-	padding-bottom: rhythm(2);
 	@include clearfix();
+	padding-bottom: rhythm(2);
+	
 	.heading{
-		@include container(90%);
+		@include container(95%);
 		h1{
 			@include text-shadow(0px 2px darken($orange,15%));
-		}
+		}// h1
 	}// .heading
+
 	.content {
 		section {
-			
+			@include container(90%);
+			font-size: 1.25rem;
+			line-height: 100%;
+			ul {
+				font-size:1.5rem;
+				line-height: 150%;
+				text-align: right;
+				li a {
+					color: darken($orange,5%);
+					font-family: $headFont;
+					text-decoration: underline;
+					&:hover {
+						color: lighten($orange, 10%);
+					}// hover
+				}// li a
+			}// ul	
 			h1 {
-				font-size: 1.5rem;
+				font-size: 1.2rem;
 				padding-bottom: rhythm(.5);
 				color: $red;
 			}//h1
 			h1:before {
 				font-family: 'fontawesome';
-				content: '\f279';
+				content: '\f279';  //map
 				font-weight: $normal;
 				color: $red;
 				margin-right: rhythm(.5);
 			}//h1:before
 		}	//section
-		@include breakpoint(0 $medium){
-			iframe {
-				width: 100%;
-				height: rhythm(15);
-			}// .googlemap
-			.text {
-				@include span(4 of 8);
-				margin-top: rhythm(1);
-				line-height: 100%;
-				ul{li{
-					font-size: 1.5rem;
-					}}
-			}//text
-			#directions {
-				padding:rhythm(.51);
-				margin-bottom:rhythm(2);
-				font-size: 1rem;
-				line-height: 140%;
-				h1{font-size: 1.5rem;} 
-			}// #directions
-		}// 0 $medium
-		@include breakpoint($medium $large) {
+
+		iframe {
+			width: 100%;
+			height: rhythm(15);
+		}// .googlemap
+
+		#directions {
+			@include border-radius(rhythm(.5));
+			border: 3px solid $red;
+			padding:rhythm(.5);
+			margin-bottom:rhythm(2);
+			font-size: 1.25rem;
+			line-height: 140%;
+			h1{font-size: 1.75rem;} 
+		}// #directions
+
+		@include breakpoint($medium) {
 			iframe {
 				@include border-radius(rhythm(1));
 			}
@@ -53,74 +64,48 @@
 				p{font-size: 1.5rem;}
 				line-height: 170%;
 			}
-			.map {
+			section {
 				@include span(2 of 4);
 				iframe {
 				width: 100%;
 				height: rhythm(30);
 			}// iframe
 			}//map
-			#contact-info {
-				margin-right:rhythm(2);
-			}//$contact-info
 			#directions {
 				font-size: 1.5rem;
 				line-height: 140%;
 				h1{font-size: 2rem;} 
 			}// #directions
 		}//$medium $large
+
 		@include breakpoint($large) {
-			@include container(85%);
+			
 			iframe {
 				width: 100%;
 				height: rhythm(20);
 				@include border-radius(rhythm(2));
 			}// .googlemap
 			.text {
-				@include span(1 of 2);
-				margin-top: rhythm(1);
 				p {font-size: 1.5rem;}
 				ul{
-					margin-top: rhythm(8);
 					li{
-					font-size: 2.5rem;
-
-					}}
-			}//text
-			#directions {
-				font-size: 1.5rem;
-				line-height: 140%;
-				h1{font-size: 2rem;} 
-			}// #directions
-			}// $large
-			#directions {
-				@include border-radius(rhythm(.5));
-				border: 3px solid $red;
-				padding:rhythm(1);
-				margin-bottom:rhythm(2);
-				
-			}// #directions
-			.text {
-				
-				font-size: 1rem;
-				ul {
-					margin-top: rhythm(2);
-					bottom: 0;
 					font-size: 2rem;
-					line-height: 150%;
-					text-align: right;
-					li a {
-						color: darken($orange,5%);
-						font-family: $headFont;
-						text-decoration: underline;
-						&:hover {
-							color: lighten($orange, 10%);
-						}// hover
-					}// li a
+					margin-top: rhythm(.5);
+					} //li
 				}// ul
-			} //text
+			}//text
+
+			#directions {
+				font-size: 1rem;
+				line-height: 140%;
+				h1{font-size: 1.5rem;} 
+			}// #directions
+		}// $large
+
+	
+
 		
-	}
+	}// .content
 }// @location
 
 

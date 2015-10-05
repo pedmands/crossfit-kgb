@@ -7,6 +7,10 @@
 $(document).ready(function() {
 
 
+
+  
+
+
   "use strict";
 
   var topOffSet = 50; //variable for menu height

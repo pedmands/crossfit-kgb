@@ -3,7 +3,7 @@
 	float:left;
 	position: fixed;
 	z-index: 101;
-	transition: all .5s ease-in-out;
+	transition: all .5s ease-out;
 	background-image: url(../images/kgblogo.png);
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -27,13 +27,16 @@
 
 }//logo-bg
 .bg-hide {opacity: 0; height:0;}
+$kgbWidth: 600px;
+	$kgbHeight: 100px;
 .kgb-lg {
-	width: 600px;
-	height: 100px;
+	
+	width: $kgbWidth*1.5;
+	height: $kgbHeight*1.5;
 }
 .kgb-sm {
-	width: 300px;
-	height: 50px;
+	width: $kgbWidth/2.5;
+	height: $kgbHeight/2.5;
 }
 
 /* Carousel Fade */

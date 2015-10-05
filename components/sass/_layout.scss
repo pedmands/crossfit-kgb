@@ -22,7 +22,7 @@ p {
 	padding-top:75px;
 	.heading {
 		h1{
-			font-size: 2rem;
+			font-size: 1.75rem;
 			margin-bottom: rhythm(.5);
 		}
 	}
@@ -35,51 +35,20 @@ a {
 }
 @include breakpoint($medium $large) {
 	body {
-		font-size: 1.1rem;
+		font-size: 1.4rem;
 	line-height: 130%;
 	}
 }// $small $medium
 @include breakpoint($small $medium) {
 	body {
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 	line-height: 130%;
 	}
 }// $small $medium
 @include breakpoint(0 $small) {
 	body {
-		font-size: 1.5rem;
+		font-size: 1rem;
 	line-height: 140%;
 	}
 } // 0 $small
 
-footer {
-	@include container(100%);
-		@include background-image(
-		linear-gradient(
-			lighten($black, 20%), $black	
-		));
-	padding: rhythm(1) 0;
-	#socialmedia {
-		text-align: center;
-		ul {
-			list-style: none;
-			li {
-				h1 {
-					color: $white;
-					font-weight: $normal;
-					font-family: $bodyFont;
-					font-size: 1.2rem;
-					@include breakpoint($medium){
-						font-size: 1.7rem;
-					}
-				}
-				display: inline-block;
-				padding: 0 rhythm(.5);
-				img {
-					width: 40px;
-					@include border-radius(50%);
-				}// img
-			}//li
-		}//ul
-	}//socialmedia
-}

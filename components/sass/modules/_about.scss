@@ -1,6 +1,6 @@
 #about {
 	margin-bottom: 2em;
-	@include container(90%);
+	@include container(95%);
 	strong { 
 		font-family: $headFont;
 	}
@@ -30,11 +30,8 @@
 		.about-kgb li {
 			strong {@include text-shadow(0 2px 0 $orange);
 				text-transform: uppercase;}
-			
 			border-bottom: 1px solid $orange;
-			padding-right:rhythm(.5);
-			padding-left: rhythm(1);
-			padding-bottom: rhythm(1);
+			padding: rhythm(.5);
 			text-align: justify;
 			margin: 5px auto;
 			
@@ -42,8 +39,7 @@
 				&:last-child {
 				border-bottom: none;
 			}// last-child
-			}//medium
-			
+			}//medium			
 		}// about-kgb li
 	}// article
 	
@@ -54,7 +50,7 @@
 		}// medium
    	@include breakpoint($medium $large) {
 			&.about-kgb {
-				@include span(2 of 4);
+				@include span(5 of 10);
 			}//about-kgb
 
 		}//small
@@ -63,7 +59,7 @@
 	
 	#about-crossfit {
 		@include breakpoint($medium $large) {
-			@include span(2 of 2);
+			@include span(10 of 10);
 		}
 		
 		.quote, .byline {
@@ -77,29 +73,22 @@
 			&:before {
 				font-family: 'fontawesome';
 				color: $orange;
-				content: '\f10d';
+				content: '\f10d'; // left-quote
 				margin-right: .5em;
 			}//before
-			&:first-child {
-				&:before{font-size: 1.5rem;}
-			}//first child before
 		}// l-quote
 		.r-quote {
 			&:after {
 				font-family: 'fontawesome';
 				color: $orange;
-				content: '\f10e';
+				content: '\f10e'; // right-quote
 				margin-left: .5em;
 				margin-top: 1em;
 			}//after
 		}//r-quote
 	}// #about-crossfit
 
-	@include breakpoint($small $medium) {
-		@include container(85%);
-	}
-	@include breakpoint(0 $small) {
-		@include container(90%);
-	}
+
+
 
 }// about
