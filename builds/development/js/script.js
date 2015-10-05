@@ -16,7 +16,7 @@ $(document).ready(function() {
 
   $('#featured .item').eq(randSlide).addClass('active');
 
-  $('.fullheight').css('height', wheight - 50); //set to window tallness  
+  $('.fullheight').css('height', wheight -50); //set to window tallness  
 
 
   //replace IMG inside carousels with a background image
@@ -69,7 +69,7 @@ logoBgFader();
 // Nav Highlighting
 $(window).scroll(function(){
 
-  var windowPos = $(window).scrollTop() + topOffSet;
+  var windowPos = $(window).scrollTop() + topOffSet+10;
   $('nav li a').removeClass('active');
 
   if (windowPos > $('#about').offset().top) {

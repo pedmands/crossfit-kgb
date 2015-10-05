@@ -11,17 +11,18 @@ footer {
 			list-style: none;
 			li {
 				h1 {
+					font-size: .8em;
 					color: $white;
 					font-weight: $normal;
 					font-family: $bodyFont;
 					@include breakpoint($medium){
-						font-size: 1.2rem;
+						font-size: 1.2em;
 					}
 				}
 				display: inline-block;
 				padding: 0 rhythm(.5);
 				img {
-					width: 40px;
+					width: 30px;
 					@include border-radius(50%);
 					vertical-align: middle;
 				}// img

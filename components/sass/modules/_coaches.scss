@@ -39,12 +39,15 @@
 				margin-top:1rem;
 				margin-bottom: rhythm(1.5);
 				font-family: 'fontawesome';
+				li {
+					font-size: 1em;
+				}
 				li:before {
-					content: '\f058';
+					content: '\f058'; //check-circle
 					color: darken($green, 15%);
-					margin: .5rem 1rem;
+					margin: .5rem;
 					display: inline-block;
-					font-size: 1.5rem;
+					font-size: 1.2em;
 				}// li:before
 			}//ul
 		}// .licenses

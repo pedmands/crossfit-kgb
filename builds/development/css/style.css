@@ -163,7 +163,7 @@ header .navbar-default {
   background-image: -moz-linear-gradient(#000000, #333333);
   background-image: -webkit-linear-gradient(#000000, #333333);
   background-image: linear-gradient(#000000, #333333);
-  height: 50px;
+  height: 60px;
   border: none;
   border-radius: 0;
   z-index: 100;
@@ -250,13 +250,19 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
   background-color: #fff;
 }
 
+/* line 73, ../../../components/sass/modules/_nav.scss */
+body > header > nav > div > div.navbar-header > button {
+  height: 46px;
+  width: 46px;
+}
+
 @media only screen and (max-width: 768px) {
-  /* line 75, ../../../components/sass/modules/_nav.scss */
+  /* line 79, ../../../components/sass/modules/_nav.scss */
   header .navbar-collapse {
     background-color: rgba(0, 0, 0, 0.75);
   }
 
-  /* line 78, ../../../components/sass/modules/_nav.scss */
+  /* line 82, ../../../components/sass/modules/_nav.scss */
   header .navbar-default .nav-wrap {
     max-width: 100%;
     margin-left: auto;
@@ -268,20 +274,20 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
     display: block;
     clear: both;
   }
-  /* line 81, ../../../components/sass/modules/_nav.scss */
+  /* line 85, ../../../components/sass/modules/_nav.scss */
   header .navbar-default .navbar-nav a, header .navbar-default .navbar-nav a:focus {
     color: #fff;
     font-size: 2rem;
     padding: 10px;
     margin-left: 2rem;
   }
-  /* line 86, ../../../components/sass/modules/_nav.scss */
+  /* line 90, ../../../components/sass/modules/_nav.scss */
   header .navbar-default .navbar-nav a:hover, header .navbar-default .navbar-nav a:focus:hover {
     color: #E6AE2A;
     border-bottom: 4px solid #E6AE2A;
     padding-bottom: 6px;
   }
-  /* line 91, ../../../components/sass/modules/_nav.scss */
+  /* line 95, ../../../components/sass/modules/_nav.scss */
   header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav a:focus.active {
     color: #E6AE2A;
     border-bottom: 4px solid #E6AE2A;
@@ -593,8 +599,8 @@ body > div > div.parallax-window {
 /* line 1, ../../../components/sass/modules/_classes.scss */
 #classes {
   font-weight: 100;
-  background: radial-gradient(#000000 15%, rgba(0, 0, 0, 0) 16%) 0 0, radial-gradient(#000000 15%, rgba(0, 0, 0, 0) 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, rgba(0, 0, 0, 0) 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, rgba(0, 0, 0, 0) 20%) 8px 9px;
-  background-color: #282828;
+  background: radial-gradient(rgba(0, 0, 0, 0.5) 15%, rgba(0, 0, 0, 0) 16%) 0 0, radial-gradient(rgba(0, 0, 0, 0.5) 15%, rgba(0, 0, 0, 0) 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, rgba(0, 0, 0, 0) 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, rgba(0, 0, 0, 0) 20%) 8px 9px;
+  background-color: #4d4d4d;
   background-size: 16px 16px;
   color: #fff;
   padding-bottom: 2em;
@@ -941,25 +947,29 @@ body > div > div.parallax-window {
   font-family: 'fontawesome';
 }
 /* line 42, ../../../components/sass/modules/_coaches.scss */
+#coaches .coach .licenses ul li {
+  font-size: 1em;
+}
+/* line 45, ../../../components/sass/modules/_coaches.scss */
 #coaches .coach .licenses ul li:before {
   content: '\f058';
   color: #0abc61;
-  margin: .5rem 1rem;
+  margin: .5rem;
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.2em;
 }
-/* line 54, ../../../components/sass/modules/_coaches.scss */
+/* line 57, ../../../components/sass/modules/_coaches.scss */
 #coaches #lia .l-quote:before {
   font-family: 'fontawesome';
   color: #E6AE2A;
   content: '\f10d';
   margin-right: .5em;
 }
-/* line 61, ../../../components/sass/modules/_coaches.scss */
+/* line 64, ../../../components/sass/modules/_coaches.scss */
 #coaches #lia .l-quote:first-child:before {
   font-size: 1.5rem;
 }
-/* line 65, ../../../components/sass/modules/_coaches.scss */
+/* line 68, ../../../components/sass/modules/_coaches.scss */
 #coaches #lia .r-quote:after {
   font-family: 'fontawesome';
   color: #E6AE2A;
@@ -967,7 +977,7 @@ body > div > div.parallax-window {
   display: inline-block;
   margin-left: .5em;
 }
-/* line 76, ../../../components/sass/modules/_coaches.scss */
+/* line 79, ../../../components/sass/modules/_coaches.scss */
 #coaches #ben .coach-pic {
   -moz-border-radius-topleft: 1.25em;
   -webkit-border-top-left-radius: 1.25em;
@@ -987,7 +997,7 @@ body > div > div.parallax-window {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 88, ../../../components/sass/modules/_coaches.scss */
+/* line 91, ../../../components/sass/modules/_coaches.scss */
 #coaches #lia .coach-pic {
   -moz-border-radius-topright: 1.25em;
   -webkit-border-top-right-radius: 1.25em;
@@ -1008,7 +1018,7 @@ body > div > div.parallax-window {
   background-size: cover;
 }
 @media (min-width: 768px) {
-  /* line 101, ../../../components/sass/modules/_coaches.scss */
+  /* line 104, ../../../components/sass/modules/_coaches.scss */
   #coaches .coach {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1016,7 +1026,7 @@ body > div > div.parallax-window {
     width: 50%;
     float: left;
   }
-  /* line 103, ../../../components/sass/modules/_coaches.scss */
+  /* line 106, ../../../components/sass/modules/_coaches.scss */
   #coaches .coach p {
     max-width: 90%;
     margin-left: auto;
@@ -1030,7 +1040,7 @@ body > div > div.parallax-window {
   }
 }
 @media (min-width: 0) and (max-width: 768px) {
-  /* line 109, ../../../components/sass/modules/_coaches.scss */
+  /* line 112, ../../../components/sass/modules/_coaches.scss */
   #coaches p {
     max-width: 90%;
     margin-left: auto;
@@ -1042,7 +1052,7 @@ body > div > div.parallax-window {
     display: block;
     clear: both;
   }
-  /* line 113, ../../../components/sass/modules/_coaches.scss */
+  /* line 116, ../../../components/sass/modules/_coaches.scss */
   #coaches .coach .coach-pic {
     -moz-border-radius: 1.25em;
     -webkit-border-radius: 1.25em;
@@ -1371,12 +1381,12 @@ footer #socialmedia ul li h1 {
 @media (min-width: 768px) {
   /* line 13, ../../../components/sass/modules/_footer.scss */
   footer #socialmedia ul li h1 {
-    font-size: 1.2rem;
+    font-size: 1.2em;
   }
 }
 /* line 23, ../../../components/sass/modules/_footer.scss */
 footer #socialmedia ul li img {
-  width: 40px;
+  width: 30px;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;

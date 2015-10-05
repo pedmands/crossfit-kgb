@@ -7,7 +7,7 @@ header .navbar-default { @include background-image(
 	linear-gradient(
 		$black, lighten($black, 20%)
 		));
-	height: 50px;
+	height: 60px;
 	border:none;
 	border-radius: 0;
 	z-index: 100;
@@ -70,11 +70,15 @@ header .navbar-default { @include background-image(
 		}//icon-bar
 	}//hover
 }//navbar-toggle
+body > header > nav > div > div.navbar-header > button {
+		height:46px;
+	width:46px;
+	}
 
 @media only screen and (max-width: 768px) {
 	header .navbar-collapse {background-color: rgba(0,0,0,.75);}
 	header .navbar-default {
-		
+
 		.nav-wrap {
 			@include container(100%);
 		}//nav-wrap
