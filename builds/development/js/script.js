@@ -7,11 +7,6 @@
 **/
 $(document).ready(function() {
 
-
-
-  
-
-
   "use strict";
 
   var topOffSet = 50; //variable for menu height
@@ -20,7 +15,6 @@ $(document).ready(function() {
   var randSlide = Math.floor(Math.random()*slideqty);
 
   $('#featured .item').eq(randSlide).addClass('active');
-
 
   $('.fullheight').css('height', wheight - 50); //set to window tallness  
 
@@ -35,7 +29,7 @@ $(document).ready(function() {
   //adjust height of .fullheight elements on window resize
   $(window).resize(function() {
     wheight = $(window).height(); //get the height of the window
-    $('.fullheight').css('height', wheight); //set to window tallness  
+    $('.fullheight').css('height', wheight -50); //set to window tallness  
   });
 
 //Sticky Nav

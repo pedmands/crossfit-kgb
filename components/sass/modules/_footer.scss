@@ -14,9 +14,8 @@ footer {
 					color: $white;
 					font-weight: $normal;
 					font-family: $bodyFont;
-					font-size: 1.2rem;
 					@include breakpoint($medium){
-						font-size: 1.7rem;
+						font-size: 1.2rem;
 					}
 				}
 				display: inline-block;
@@ -24,6 +23,7 @@ footer {
 				img {
 					width: 40px;
 					@include border-radius(50%);
+					vertical-align: middle;
 				}// img
 			}//li
 		}//ul

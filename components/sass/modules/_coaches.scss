@@ -1,5 +1,5 @@
 #coaches {
-	font-size: 1.2rem;
+	font-size: 1rem;
 
 	@include container(97%);
 	@include clearfix;
@@ -15,13 +15,13 @@
 		@include breakpoint($medium){
 			&:last-child {
 			border-left: 2px solid $orange;
-		}
-		}
+			}//last-child
+		}//breakpoint $medium
 		
 		h2 {
 			right:0;
 			bottom:-3px;
-			font-size: 3.5rem;
+			font-size: 3rem;
 			padding: 1rem;
 			color:$orange;
 			position: absolute;

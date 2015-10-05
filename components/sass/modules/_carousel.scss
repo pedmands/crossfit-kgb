@@ -1,4 +1,12 @@
 // KGB Logo Splash
+header {
+	position: relative;
+}
+.fullheight {
+	@include breakpoint(max-width 768px) {
+		margin-top: 50px;
+	}
+}
 #kgb-logo {
 	float:left;
 	position: fixed;
@@ -8,6 +16,9 @@
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	background-size: 100%;
+	@include breakpoint(max-width 768px) {
+		margin-top: -50px;
+	}
 }
 @include breakpoint(0 $medium) {
 	#kgb-logo {
@@ -77,3 +88,19 @@ $kgbWidth: 600px;
 	background-position: center center;
 	width: 100%; height: 100%;
 }
+
+.circle-down {
+	position: absolute;
+	display: inline-block;
+	bottom: 100px; right: 0;
+	width:100%;height:100px;
+	text-align: center;
+	font-size: 150px;
+	@include breakpoint(768px){
+		bottom: 200px;
+	}//breakpoint 768
+	i {
+
+		color:rgba($orange, .75);
+	}// i
+}//circle-down

@@ -49,8 +49,7 @@
 		}// h1:before
 		li:before {
 			font-family: 'fontawesome';
-			margin-right:10px;
-			margin-left: 25px;
+			margin-right:.5em;
 		}// li:before
 		ul {
 			@include border-radius(rhythm(.45));
@@ -58,8 +57,8 @@
 			padding: .35em;
 			li {
 				font-style: italic;
-				margin: .25em 0;
-				margin-left: 0;
+				margin: .5em 0;
+				margin-left: .75em;
 			}// li
 		}// ul
 		
@@ -70,7 +69,7 @@
 			li:before {
 				content: '\f013'; // gear
 				font-style:normal;
-				color: darken($green, 20%);
+				color: darken($white, 45%);
 			}// li:before
 			h1 {
 				background-color: darken($green, 20%);

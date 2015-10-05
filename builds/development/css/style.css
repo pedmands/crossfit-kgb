@@ -256,7 +256,7 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
     background-color: rgba(0, 0, 0, 0.75);
   }
 
-  /* line 77, ../../../components/sass/modules/_nav.scss */
+  /* line 78, ../../../components/sass/modules/_nav.scss */
   header .navbar-default .nav-wrap {
     max-width: 100%;
     margin-left: auto;
@@ -268,20 +268,20 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
     display: block;
     clear: both;
   }
-  /* line 80, ../../../components/sass/modules/_nav.scss */
+  /* line 81, ../../../components/sass/modules/_nav.scss */
   header .navbar-default .navbar-nav a, header .navbar-default .navbar-nav a:focus {
     color: #fff;
     font-size: 2rem;
     padding: 10px;
     margin-left: 2rem;
   }
-  /* line 85, ../../../components/sass/modules/_nav.scss */
+  /* line 86, ../../../components/sass/modules/_nav.scss */
   header .navbar-default .navbar-nav a:hover, header .navbar-default .navbar-nav a:focus:hover {
     color: #E6AE2A;
     border-bottom: 4px solid #E6AE2A;
     padding-bottom: 6px;
   }
-  /* line 90, ../../../components/sass/modules/_nav.scss */
+  /* line 91, ../../../components/sass/modules/_nav.scss */
   header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav a:focus.active {
     color: #E6AE2A;
     border-bottom: 4px solid #E6AE2A;
@@ -289,6 +289,18 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
   }
 }
 /* line 2, ../../../components/sass/modules/_carousel.scss */
+header {
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  /* line 5, ../../../components/sass/modules/_carousel.scss */
+  .fullheight {
+    margin-top: 50px;
+  }
+}
+
+/* line 10, ../../../components/sass/modules/_carousel.scss */
 #kgb-logo {
   float: left;
   position: fixed;
@@ -299,15 +311,21 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
   background-position: 0 0;
   background-size: 100%;
 }
+@media (max-width: 768px) {
+  /* line 10, ../../../components/sass/modules/_carousel.scss */
+  #kgb-logo {
+    margin-top: -50px;
+  }
+}
 
 @media (min-width: 0) and (max-width: 768px) {
-  /* line 13, ../../../components/sass/modules/_carousel.scss */
+  /* line 24, ../../../components/sass/modules/_carousel.scss */
   #kgb-logo {
     width: 300px;
     height: 50px;
   }
 }
-/* line 18, ../../../components/sass/modules/_carousel.scss */
+/* line 29, ../../../components/sass/modules/_carousel.scss */
 .logo-bg {
   position: fixed;
   width: 100%;
@@ -319,31 +337,31 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
   text-align: right;
 }
 
-/* line 29, ../../../components/sass/modules/_carousel.scss */
+/* line 40, ../../../components/sass/modules/_carousel.scss */
 .bg-hide {
   opacity: 0;
   height: 0;
 }
 
-/* line 32, ../../../components/sass/modules/_carousel.scss */
+/* line 43, ../../../components/sass/modules/_carousel.scss */
 .kgb-lg {
   width: 900px;
   height: 150px;
 }
 
-/* line 37, ../../../components/sass/modules/_carousel.scss */
+/* line 48, ../../../components/sass/modules/_carousel.scss */
 .kgb-sm {
   width: 240px;
   height: 40px;
 }
 
 /* Carousel Fade */
-/* line 43, ../../../components/sass/modules/_carousel.scss */
+/* line 54, ../../../components/sass/modules/_carousel.scss */
 .carousel.fade {
   opacity: 1;
 }
 
-/* line 47, ../../../components/sass/modules/_carousel.scss */
+/* line 58, ../../../components/sass/modules/_carousel.scss */
 .carousel.fade .item {
   transition: opacity ease-out .7s;
   left: 0;
@@ -354,35 +372,57 @@ header .navbar-default .navbar-nav a.active, header .navbar-default .navbar-nav 
   display: block;
 }
 
-/* line 57, ../../../components/sass/modules/_carousel.scss */
+/* line 68, ../../../components/sass/modules/_carousel.scss */
 .carousel.fade .item:first-child {
   top: auto;
   opacity: 0;
   position: relative;
 }
 
-/* line 63, ../../../components/sass/modules/_carousel.scss */
+/* line 74, ../../../components/sass/modules/_carousel.scss */
 .carousel.fade .item.active {
   opacity: 1;
 }
 
-/* line 68, ../../../components/sass/modules/_carousel.scss */
+/* line 79, ../../../components/sass/modules/_carousel.scss */
 .carousel-control {
   opacity: 0;
 }
 
-/* line 71, ../../../components/sass/modules/_carousel.scss */
+/* line 82, ../../../components/sass/modules/_carousel.scss */
 .carousel-control.right, .carousel-control.left {
   background-image: none;
 }
 
-/* line 74, ../../../components/sass/modules/_carousel.scss */
+/* line 85, ../../../components/sass/modules/_carousel.scss */
 #featured .item {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
   height: 100%;
+}
+
+/* line 92, ../../../components/sass/modules/_carousel.scss */
+.circle-down {
+  position: absolute;
+  display: inline-block;
+  bottom: 100px;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  font-size: 150px;
+}
+@media (min-width: 768px) {
+  /* line 92, ../../../components/sass/modules/_carousel.scss */
+  .circle-down {
+    bottom: 200px;
+  }
+}
+/* line 102, ../../../components/sass/modules/_carousel.scss */
+.circle-down i {
+  color: rgba(230, 174, 42, 0.75);
 }
 
 /* line 1, ../../../components/sass/modules/_about.scss */
@@ -629,10 +669,9 @@ body > div > div.parallax-window {
 /* line 50, ../../../components/sass/modules/_classes.scss */
 #classes .content li:before {
   font-family: 'fontawesome';
-  margin-right: 10px;
-  margin-left: 25px;
+  margin-right: .5em;
 }
-/* line 55, ../../../components/sass/modules/_classes.scss */
+/* line 54, ../../../components/sass/modules/_classes.scss */
 #classes .content ul {
   -moz-border-radius: 0.5625em;
   -webkit-border-radius: 0.5625em;
@@ -640,37 +679,37 @@ body > div > div.parallax-window {
   background: rgba(0, 0, 0, 0.25);
   padding: .35em;
 }
-/* line 59, ../../../components/sass/modules/_classes.scss */
+/* line 58, ../../../components/sass/modules/_classes.scss */
 #classes .content ul li {
   font-style: italic;
-  margin: .25em 0;
-  margin-left: 0;
+  margin: .5em 0;
+  margin-left: .75em;
 }
-/* line 67, ../../../components/sass/modules/_classes.scss */
+/* line 66, ../../../components/sass/modules/_classes.scss */
 #classes .content #foundations h1:before {
   content: '\f085';
 }
-/* line 70, ../../../components/sass/modules/_classes.scss */
+/* line 69, ../../../components/sass/modules/_classes.scss */
 #classes .content #foundations li:before {
   content: '\f013';
   font-style: normal;
-  color: #09a455;
+  color: #8c8c8c;
 }
-/* line 75, ../../../components/sass/modules/_classes.scss */
+/* line 74, ../../../components/sass/modules/_classes.scss */
 #classes .content #foundations h1 {
   background-color: #09a455;
   border-bottom: 0.25rem solid #055c2f;
 }
-/* line 82, ../../../components/sass/modules/_classes.scss */
+/* line 81, ../../../components/sass/modules/_classes.scss */
 #classes .content #group-class h1:before {
   content: '\f1b3';
 }
-/* line 85, ../../../components/sass/modules/_classes.scss */
+/* line 84, ../../../components/sass/modules/_classes.scss */
 #classes .content #group-class h1 {
   background-color: #0a34ba;
   border-bottom: 0.25rem solid #051959;
 }
-/* line 90, ../../../components/sass/modules/_classes.scss */
+/* line 89, ../../../components/sass/modules/_classes.scss */
 #classes .content #group-class #group-button {
   -moz-border-radius: 1.25em;
   -webkit-border-radius: 1.25em;
@@ -681,7 +720,7 @@ body > div > div.parallax-window {
   padding: 1.25em;
   display: block;
 }
-/* line 98, ../../../components/sass/modules/_classes.scss */
+/* line 97, ../../../components/sass/modules/_classes.scss */
 #classes .content #group-class #group-button a h2, #classes .content #group-class #group-button a h3 {
   color: #fff;
   text-align: center;
@@ -689,38 +728,38 @@ body > div > div.parallax-window {
   font-weight: 400;
   font-family: "Droid Sans", sans-serif;
 }
-/* line 105, ../../../components/sass/modules/_classes.scss */
+/* line 104, ../../../components/sass/modules/_classes.scss */
 #classes .content #group-class #group-button a h2 {
   margin-top: 1.25em;
 }
-/* line 107, ../../../components/sass/modules/_classes.scss */
+/* line 106, ../../../components/sass/modules/_classes.scss */
 #classes .content #group-class #group-button a h2:after {
   font-family: 'fontawesome';
   content: '\f107';
   margin-left: 0.625em;
 }
-/* line 114, ../../../components/sass/modules/_classes.scss */
+/* line 113, ../../../components/sass/modules/_classes.scss */
 #classes .content #group-class #group-button a h3 i {
   font-size: 3rem;
   margin-top: 1rem;
 }
-/* line 124, ../../../components/sass/modules/_classes.scss */
+/* line 123, ../../../components/sass/modules/_classes.scss */
 #classes .content #ais h1:before {
   content: '\f0ad';
 }
-/* line 127, ../../../components/sass/modules/_classes.scss */
+/* line 126, ../../../components/sass/modules/_classes.scss */
 #classes .content #ais h1 {
   background-color: #b62702;
   border-bottom: 0.25rem solid #6b1701;
 }
-/* line 131, ../../../components/sass/modules/_classes.scss */
+/* line 130, ../../../components/sass/modules/_classes.scss */
 #classes .content #ais h2, #classes .content #ais h3 {
   text-shadow: 0 2px 0 #841c01;
   color: #b62702;
   text-align: center;
   font-size: 1.5rem;
 }
-/* line 137, ../../../components/sass/modules/_classes.scss */
+/* line 136, ../../../components/sass/modules/_classes.scss */
 #classes .content #ais .shaded-bg {
   -moz-border-radius: 0.5625em;
   -webkit-border-radius: 0.5625em;
@@ -731,7 +770,7 @@ body > div > div.parallax-window {
   border-bottom: 0.25rem solid rgba(0, 0, 0, 0.35);
 }
 @media (min-width: 1200px) {
-  /* line 152, ../../../components/sass/modules/_classes.scss */
+  /* line 151, ../../../components/sass/modules/_classes.scss */
   #classes section {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -741,29 +780,29 @@ body > div > div.parallax-window {
     padding-left: 1.66667%;
     padding-right: 1.66667%;
   }
-  /* line 154, ../../../components/sass/modules/_classes.scss */
+  /* line 153, ../../../components/sass/modules/_classes.scss */
   #classes section:first-child {
     border-left: none;
   }
-  /* line 157, ../../../components/sass/modules/_classes.scss */
+  /* line 156, ../../../components/sass/modules/_classes.scss */
   #classes section:last-child {
     border-right: none;
   }
-  /* line 162, ../../../components/sass/modules/_classes.scss */
+  /* line 161, ../../../components/sass/modules/_classes.scss */
   #classes .heading p {
     font-size: 1.3em;
   }
-  /* line 165, ../../../components/sass/modules/_classes.scss */
+  /* line 164, ../../../components/sass/modules/_classes.scss */
   #classes .heading h1 {
     font-size: 2rem;
   }
-  /* line 169, ../../../components/sass/modules/_classes.scss */
+  /* line 168, ../../../components/sass/modules/_classes.scss */
   #classes .content {
     font-size: 1.3em;
   }
 }
 @media (min-width: 768px) {
-  /* line 175, ../../../components/sass/modules/_classes.scss */
+  /* line 174, ../../../components/sass/modules/_classes.scss */
   #classes section {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -775,21 +814,21 @@ body > div > div.parallax-window {
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     border-right: 1px solid rgba(0, 0, 0, 0.5);
   }
-  /* line 179, ../../../components/sass/modules/_classes.scss */
+  /* line 178, ../../../components/sass/modules/_classes.scss */
   #classes section:first-child {
     border-left: none;
   }
-  /* line 183, ../../../components/sass/modules/_classes.scss */
+  /* line 182, ../../../components/sass/modules/_classes.scss */
   #classes section:last-child {
     border-right: none;
   }
-  /* line 189, ../../../components/sass/modules/_classes.scss */
+  /* line 188, ../../../components/sass/modules/_classes.scss */
   #classes .content h1 {
     font-size: 1.5rem;
   }
 }
 @media (min-width: 0) and (max-width: 768px) {
-  /* line 195, ../../../components/sass/modules/_classes.scss */
+  /* line 194, ../../../components/sass/modules/_classes.scss */
   #classes section {
     max-width: 95%;
     margin-left: auto;
@@ -802,15 +841,15 @@ body > div > div.parallax-window {
     display: block;
     clear: both;
   }
-  /* line 201, ../../../components/sass/modules/_classes.scss */
+  /* line 200, ../../../components/sass/modules/_classes.scss */
   #classes .content h1 {
     font-size: 1.5rem;
   }
-  /* line 204, ../../../components/sass/modules/_classes.scss */
+  /* line 203, ../../../components/sass/modules/_classes.scss */
   #classes .content p {
     margin-bottom: 1.25em;
   }
-  /* line 208, ../../../components/sass/modules/_classes.scss */
+  /* line 207, ../../../components/sass/modules/_classes.scss */
   #classes .content #group-class #group-button {
     margin-bottom: 2.5em;
   }
@@ -818,7 +857,7 @@ body > div > div.parallax-window {
 
 /* line 1, ../../../components/sass/modules/_coaches.scss */
 #coaches {
-  font-size: 1.2rem;
+  font-size: 1rem;
   max-width: 97%;
   margin-left: auto;
   margin-right: auto;
@@ -869,7 +908,7 @@ body > div > div.parallax-window {
 #coaches .coach h2 {
   right: 0;
   bottom: -3px;
-  font-size: 3.5rem;
+  font-size: 3rem;
   padding: 1rem;
   color: #E6AE2A;
   position: absolute;
@@ -1328,18 +1367,18 @@ footer #socialmedia ul li h1 {
   color: #fff;
   font-weight: 400;
   font-family: "Droid Sans", sans-serif;
-  font-size: 1.2rem;
 }
 @media (min-width: 768px) {
   /* line 13, ../../../components/sass/modules/_footer.scss */
   footer #socialmedia ul li h1 {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
 }
-/* line 24, ../../../components/sass/modules/_footer.scss */
+/* line 23, ../../../components/sass/modules/_footer.scss */
 footer #socialmedia ul li img {
   width: 40px;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
+  vertical-align: middle;
 }
